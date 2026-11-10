@@ -26,6 +26,17 @@ document.querySelectorAll(".repo-link").forEach((anchor) => {
   wireLink(anchor, CONFIG.repoUrls[projectName], "Repository link not added yet.");
 });
 
+const copyEmailBtn = document.getElementById("copy-email-btn");
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText("r.preet01@outlook.it").then(() => {
+      showToast("Email copied to clipboard!");
+    }).catch(() => {
+      showToast("r.preet01@outlook.it");
+    });
+  });
+}
+
 const burger = document.getElementById("burger");
 const links = document.getElementById("links");
 
