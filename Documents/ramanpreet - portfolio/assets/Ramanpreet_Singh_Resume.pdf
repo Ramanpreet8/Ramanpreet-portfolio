@@ -1,723 +1,134 @@
-%PDF-1.3
-%âãÏÓ
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
 <<
-/PageMode /UseNone
-/Pages 2 0 R
-/Type /Catalog
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 8 0 R
 >>
 endobj
 2 0 obj
 <<
-/Count 1
-/Kids [ 3 0 R ]
-/Type /Pages
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
 >>
 endobj
 3 0 obj
 <<
-/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 20 0 R 21 0 R ]
-/Contents 9 0 R
-/MediaBox [ 0 0 612 792 ]
-/Parent 2 0 R
-/Resources <<
-/Font 12 0 R
-/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
->>
-/Rotate 0
-/Trans <<
->>
-/Type /Page
+/BaseFont /Times-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
 >>
 endobj
 4 0 obj
 <<
-/A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\057github\056com\057Ramanpreet8\057Live\055interactive\055educational\055game)
->>
-/Border [ 0 0 0 ]
-/Rect [ 46 433.7125 320.683 444.9125 ]
-/Subtype /Link
-/Type /Annot
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
 >>
 endobj
 5 0 obj
 <<
 /A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\0576af28c376aea243c06854154\055\055nutribloom8\056netlify\056app\057login)
->>
-/Border [ 0 0 0 ]
-/Rect [ 46 343.3125 311.478 354.5125 ]
-/Subtype /Link
-/Type /Annot
+/S /URI /Type /Action /URI (https://www.linkedin.com/in/ramanpreet-singh-524448386)
+>> /Border [ 0 0 0 ] /Rect [ 277.804 722.8 475.6985 734.2 ] /Subtype /Link /Type /Annot
 >>
 endobj
 6 0 obj
 <<
 /A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\057github\056com\057Ramanpreet8\057AirPollution\056git)
->>
-/Border [ 0 0 0 ]
-/Rect [ 46 230.5125 244.9775 241.7125 ]
-/Subtype /Link
-/Type /Annot
+/S /URI /Type /Action /URI (https://github.com/Ramanpreet8)
+>> /Border [ 0 0 0 ] /Rect [ 482.3485 722.8 510.8485 734.2 ] /Subtype /Link /Type /Annot
 >>
 endobj
 7 0 obj
 <<
-/Type /Annot
-/Subtype /Link
-/Rect [ 279.288 727.5 466.767 740 ]
-/Border [ 0 0 0 ]
 /A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\057www\056linkedin\056com\057in\057ramanpreet\055singh\055524448386)
->>
-/P 3 0 R
+/S /URI /Type /Action /URI (https://portfolio-ramanpreet.netlify.app)
+>> /Border [ 0 0 0 ] /Rect [ 517.4985 722.8 551.2805 734.2 ] /Subtype /Link /Type /Annot
 >>
 endobj
 8 0 obj
 <<
-/Type /Annot
-/Subtype /Link
-/Rect [ 277.933 343.3125 543.4105 354.5125 ]
-/Border [ 0 0 0 ]
-/A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\0576af28c376aea243c06854154\055\055nutribloom8\056netlify\056app\057login)
->>
+/BaseFont /Times-Italic /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
 >>
 endobj
 9 0 obj
-[ 10 0 R 11 0 R ]
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Ramanpreet8/Live-interactive-educational-game)
+>> /Border [ 0 0 0 ] /Rect [ 45.6 513.2375 302.328 524.1625 ] /Subtype /Link /Type /Annot
+>>
 endobj
 10 0 obj
 <<
-/Length 9968
+/A <<
+/S /URI /Type /Action /URI (https://6af28c376aea243c06854154--nutribloom8.netlify.app/login)
+>> /Border [ 0 0 0 ] /Rect [ 45.6 400.9875 299.972 411.9125 ] /Subtype /Link /Type /Annot
 >>
-stream
-q
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
-q
-1 0 0 1 46 738 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F2 17 Tf 20 TL 191.762 0 Td (Ramanpreet Singh) Tj T* -191.762 0 Td ET
-Q
-Q
-q
-1 0 0 1 46 728 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F3 9 Tf 10 TL 27.629 0 Td (New York, NY | r.preet01@outlook.it | \(929\) 623-3075 | www.linkedin.com/in/ramanpreet-singh-524448386 | GitHub | Portfolio) Tj T* -27.629 0 Td ET
-Q
-Q
-q
-1 0 0 1 46 709 cm
-q
-BT 1 0 0 1 0 0 Tm 11 TL /F2 11 Tf 0 0 0 rg (E) Tj /F2 9 Tf (DUCATION & CERTIFICATIONS) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 707.4 cm
-q
-.6 w
-1 J
-0 0 0 RG
-n 0 0 m 520 0 l S
-Q
-Q
-q
-1 0 0 1 46 693.2 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 0 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F2 9.5 Tf 11.2 TL (CUNY New York City College of Technology) Tj T* ET
-Q
-Q
-q
-1 0 0 1 405.6 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F3 9.5 Tf 11.2 TL 60.041 0 Td (Brooklyn, NY) Tj T* -60.041 0 Td ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 46 682 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 0 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F4 9.5 Tf 11.2 TL (Bachelor of Technology \(BTech\), Computer Systems Technology. GPA: 3.73.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 405.6 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F4 9.5 Tf 11.2 TL 30.496 0 Td (Expected Spring 2028) Tj T* -30.496 0 Td ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 46 670.8 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 0 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F2 9.5 Tf 11.2 TL (NYC Tech Talent Pipeline Residency) Tj T* ET
-Q
-Q
-q
-1 0 0 1 405.6 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F3 9.5 Tf 11.2 TL 60.041 0 Td (Brooklyn, NY) Tj T* -60.041 0 Td ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 46 659.6 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 0 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F4 9.5 Tf 11.2 TL (Resident) Tj T* ET
-Q
-Q
-q
-1 0 0 1 405.6 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F4 9.5 Tf 11.2 TL 75.089 0 Td (June 2026) Tj T* -75.089 0 Td ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 46 637.2 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Completed a 12-week full-stack development bootcamp covering data analysis and visualization in JupyterLab, security incident) Tj T* (response and intelligence-cycle analysis, Linux/Windows system administration, and team-based development using Git/GitHub.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 626 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F2 9.5 Tf 11.2 TL (Certifications) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 603.6 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (CodePath \227 AI110: Foundations of AI Engineering: Python, AI-assisted programming, algorithms, machine learning, RAG, and) Tj T* (AI application development.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 581.2 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (CodePath \227 WEB101: Intro to Web Development: HTML, CSS, JavaScript, DOM manipulation, responsive web design, and) Tj T* (interactive website development.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 558.8 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 24 12.9 Tm 11.2 TL /F3 9.5 Tf 0 0 0 rg (Information Security Basics \227 TEEX \(Texas A) Tj (&) Tj (M\) / DHS-FEMA \(11/2025\): 13-hour technical training in information security) Tj T* (fundamentals.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 539.8 cm
-q
-BT 1 0 0 1 0 0 Tm 11 TL /F2 11 Tf 0 0 0 rg (S) Tj /F2 9 Tf (KILLS) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 538.2 cm
-q
-.6 w
-1 J
-0 0 0 RG
-n 0 0 m 520 0 l S
-Q
-Q
-q
-1 0 0 1 46 524 cm
-q
-BT 1 0 0 1 0 1.7 Tm 11.2 TL /F2 9.5 Tf 0 0 0 rg (Languages:) Tj /F3 9.5 Tf ( Python 3, JavaScript \(ES6+\), TypeScript, Java, SQL, HTML5) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 512.8 cm
-q
-BT 1 0 0 1 0 1.7 Tm 11.2 TL /F2 9.5 Tf 0 0 0 rg (Frontend:) Tj /F3 9.5 Tf ( React, Ionic, Recharts, Responsive Design) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 501.6 cm
-q
-BT 1 0 0 1 0 1.7 Tm 11.2 TL /F2 9.5 Tf 0 0 0 rg (Backend & Databases:) Tj /F3 9.5 Tf ( Express.js, REST APIs, Socket.IO, Prisma ORM, PostgreSQL, MySQL) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 490.4 cm
-q
-BT 1 0 0 1 0 1.7 Tm 11.2 TL /F2 9.5 Tf 0 0 0 rg (Data Analysis & Visualization:) Tj /F3 9.5 Tf ( Pandas, Seaborn, Plotly, Jupyter Notebook / JupyterLab) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 479.2 cm
-q
-BT 1 0 0 1 0 1.7 Tm 11.2 TL /F2 9.5 Tf 0 0 0 rg (Tools & DevOps:) Tj /F3 9.5 Tf ( Git, GitHub, GitHub Actions \(CI/CD\), Linux, Windows System Administration) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 460.2 cm
-q
-BT 1 0 0 1 0 0 Tm 11 TL /F2 11 Tf 0 0 0 rg (P) Tj /F2 9 Tf (ROJECTS) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 458.6 cm
-q
-.6 w
-1 J
-0 0 0 RG
-n 0 0 m 520 0 l S
-Q
-Q
-q
-1 0 0 1 46 444.4 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F2 9.5 Tf 11.2 TL (Live Interactive Educational Game \227 MLH Hack Day @ CityTech) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 433.2 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F2 9.5 Tf 11.2 TL (https://github.com/Ramanpreet8/Live-interactive-educational-game) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 422 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F4 9.5 Tf 11.2 TL (React 18, TypeScript, Node.js, Express, Socket.IO, Google Gemini API) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 399.6 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Co-built and shipped a real-time multiplayer quiz platform in under 7 hours, enabling players to join via QR/room codes and) Tj T* (compete with live countdown scoring, answer streaks, XP progression, and animated podiums.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 377.2 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Integrated Google Gemini API to dynamically generate custom quizzes from prompt topics, and engineered an authoritative) Tj T* (Socket.IO state machine with shared TypeScript interfaces to prevent client-side desync.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 354 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F2 9.5 Tf 11.2 TL (NutriBloom \227 Team Project \(5 members\)) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 342.8 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F2 9.5 Tf 11.2 TL (https://6af28c376aea243c06854154--nutribloom8.netlify.app/login) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 331.6 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F4 9.5 Tf 11.2 TL (React \(Ionic\), Express.js, PostgreSQL, Prisma, Recharts) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 309.2 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Built a full-stack health dashboard using React, Express, and Prisma to track macronutrient intake, calories, and BMI trends,) Tj T* (improving user visibility into daily health metrics.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 286.8 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Designed a four-model PostgreSQL schema with cascade deletes and built three interactive Recharts visualizations, ensuring) Tj T* (referential integrity across the app.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 264.4 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Prototyped the "Any Day's Meals" feature end-to-end \(1 Express API route, 1 React page\) and resolved Git merge conflicts for a) Tj T* (5-person team using GitHub Actions CI/CD.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 241.2 cm
-q
-BT 1 0 0 1 0 1.7 Tm 11.2 TL /F2 9.5 Tf 0 0 0 rg (Air Pollution & Public Health Data Analysis \227 Individual Project) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 230 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F2 9.5 Tf 11.2 TL (https://github.com/Ramanpreet8/AirPollution.git) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 218.8 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F4 9.5 Tf 11.2 TL (Python, Pandas, Seaborn, Plotly) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 196.4 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Merged 19,827 air-quality rows and 48 asthma rows in Pandas, filtering out 7,439 out-of-scope records to isolate borough-level) Tj T* (data for analysis.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 174 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Identified that the Bronx children's asthma ED visit rate was 284.3% higher than Staten Island's \(212.5 vs. 55.3 per 100k\) using) Tj T* (Pandas comparative analysis.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 151.6 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Visualized borough disparities in Seaborn and Plotly, finding that a PM2.5-asthma correlation was unsupported due to 0) Tj T* (overlapping years between datasets.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 132.6 cm
-q
-BT 1 0 0 1 0 0 Tm 11 TL /F2 11 Tf 0 0 0 rg (E) Tj /F2 9 Tf (XPERIENCE) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 131 cm
-q
-.6 w
-1 J
-0 0 0 RG
-n 0 0 m 520 0 l S
-Q
-Q
-q
-1 0 0 1 46 116.8 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 0 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F2 9.5 Tf 11.2 TL (Undergraduate Researcher, CUNY New York City College of Technology) Tj T* ET
-Q
-Q
-q
-1 0 0 1 405.6 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F3 9.5 Tf 11.2 TL 42.618 0 Td (10/2026 \226 12/2026) Tj T* -42.618 0 Td ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 46 105.6 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 0 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F4 9.5 Tf 11.2 TL (Emerging Scholars Program \(ESP\) \227 Undergraduate Research) Tj T* ET
-Q
-Q
-q
-1 0 0 1 405.6 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 1.7 Tm /F4 9.5 Tf 11.2 TL 63.2045 0 Td (Brooklyn, NY) Tj T* -63.2045 0 Td ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 46 83.2 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Investigated quantum computing from a systems perspective for the "From Bits to Qubits" project, completing literature reviews) Tj T* (and problem-solving exercises to support Prof. Marcos Pinto's research.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 46 60.8 cm
-q
-BT 1 0 0 1 10 12.9 Tm /F3 8 Tf 9.6 TL 0 0 0 rg (\177) Tj ET
-0 0 0 rg
-BT 1 0 0 1 24 12.9 Tm /F3 9.5 Tf 11.2 TL (Produced 1 research abstract and 1 poster presentation for the December 2026 Symposium, applying scientific writing and) Tj T* (technical presentation skills to communicate findings.) Tj T* ET
-Q
-Q
- 
-
-Q
-
-endstream
 endobj
 11 0 obj
 <<
-/Length 95
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Ramanpreet8/AirPollution.git)
+>> /Border [ 0 0 0 ] /Rect [ 45.6 299.6625 230.869 310.5875 ] /Subtype /Link /Type /Annot
 >>
-stream
-q
-0.0 0.0 612 792 re
-W
-n
-1 0 0 1 0 0 cm
-BT
-/F1-0 12 Tf
-14.4 TL
-ET
-BT
-/F2-0 9.5 Tf
-11.4 TL
-ET
-Q
-
-endstream
 endobj
 12 0 obj
 <<
-/F1 13 0 R
-/F1-0 14 0 R
-/F2 15 0 R
-/F2-0 16 0 R
-/F3 17 0 R
-/F4 18 0 R
+/Annots [ 5 0 R 6 0 R 7 0 R 9 0 R 10 0 R 11 0 R ] /Contents 16 0 R /MediaBox [ 0 0 612 792 ] /Parent 15 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
 >>
 endobj
 13 0 obj
 <<
-/BaseFont /Helvetica
-/Encoding /WinAnsiEncoding
-/Name /F1
-/Subtype /Type1
-/Type /Font
+/PageMode /UseNone /Pages 15 0 R /Type /Catalog
 >>
 endobj
 14 0 obj
 <<
-/BaseFont /Helvetica
-/Encoding /WinAnsiEncoding
-/Name /F1
-/Subtype /Type1
-/Type /Font
+/Author (Ramanpreet Singh) /CreationDate (D:20261112205445+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261112205445+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (Ramanpreet Singh - Resume) /Trapped /False
 >>
 endobj
 15 0 obj
 <<
-/BaseFont /Times-Bold
-/Encoding /WinAnsiEncoding
-/Name /F2
-/Subtype /Type1
-/Type /Font
+/Count 1 /Kids [ 12 0 R ] /Type /Pages
 >>
 endobj
 16 0 obj
 <<
-/BaseFont /Times-Bold
-/Encoding /WinAnsiEncoding
-/Name /F2
-/Subtype /Type1
-/Type /Font
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 4049
 >>
-endobj
-17 0 obj
-<<
-/BaseFont /Times-Roman
-/Encoding /WinAnsiEncoding
-/Name /F3
-/Subtype /Type1
-/Type /Font
->>
-endobj
-18 0 obj
-<<
-/BaseFont /Times-Italic
-/Encoding /WinAnsiEncoding
-/Name /F4
-/Subtype /Type1
-/Type /Font
->>
-endobj
-19 0 obj
-<<
-/Author (Ramanpreet Singh)
-/CreationDate (D\07220261104145547\05300\04700\047)
-/Creator (\050unspecified\051)
-/Keywords ()
-/ModDate (D\07220261104145547\05300\04700\047)
-/Producer (ReportLab PDF Library \055 \050opensource\051)
-/Subject (\050unspecified\051)
-/Title (Ramanpreet Singh \055 Resume)
-/Trapped /False
->>
-endobj
-20 0 obj
-<<
-/Type /Annot
-/Subtype /Link
-/Border [ 0 0 0 ]
-/Rect [ 473.067 727.5 500.067 740 ]
-/A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\057github\056com\057Ramanpreet8)
->>
-/P <<
-/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 20 0 R 21 0 R ]
-/Contents 9 0 R
-/MediaBox [ 0 0 612 792 ]
-/Parent 2 0 R
-/Resources <<
-/Font 12 0 R
-/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
->>
-/Rotate 0
-/Trans <<
->>
-/Type /Page
->>
->>
-endobj
-21 0 obj
-<<
-/Type /Annot
-/Subtype /Link
-/Border [ 0 0 0 ]
-/Rect [ 506.367 727.5 538.371 740 ]
-/A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\0576af28c376aea243c06854154\055\055nutribloom8\056netlify\056app\057login)
->>
-/P <<
-/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 20 0 R 21 0 R ]
-/Contents 9 0 R
-/MediaBox [ 0 0 612 792 ]
-/Parent 2 0 R
-/Resources <<
-/Font 12 0 R
-/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
->>
-/Rotate 0
-/Trans <<
->>
-/Type /Page
->>
->>
+stream
+Gb!;fBli#u')h6*d?U`VdMi8)`QOmJK9kbeCg(AP.X`1d6ZO@^5]B8+.R/Ah%fd6J.D_^qCo()W;;bink=m&%Hc@B?5IURYYDLQ%FRn-4gS*k`CsV`eH:>a9Mr.jnj[cRbG,aYNVLo]SgsXN4jU8_9DeF-*]#IDR3>Ts%\3,i.[nP#)-Za%YLp[NK7*:H8.U9,_de$V0reHI/-qO>fT22:FY3GR>L&=GMD:<Pe/DBNZ[QWggZe1R(i5\pGaJFI@@?i=UWV'"McnA7:f;<c,cl\L>=t@eq50C2SMXF0'iULc#i!aL1;V,mtf7NWZ8?6R\Q9FHcA@g?bDg>l:SY"H<oumpW%q_KO4#pB9kst%Q'qQ]*FW2d5gZUVgkOmY[=&6;(lUq@cWpEGD45e(tP[o\#:sfdH3atnCDKVPdh9hV%"iLo(p1&c2(I+F^:.Od1dC43]]U=ddO,ErbQ2%6[\n7iQB_LWj?b\0EmcO(/W'@A_j&fn8T)tJJS#&3Nb\lTbCXn0Bc'-EN'/M9]i^s%()B(9<[&BO`[Ea8P.91O[k:565Gn^C%.4JHI<;NXL$DQYEl/c-Nq3S,>I]c!ROEbs5CM*st37rn#iS+gFO4_VTYSY+3_!F)%6dXS?i0j(915M+6Gejd6pqPRMD#h/-o1UJffqb$@VmTq[?&h]fO_aYqo.P]?O,gA[3eM;VnaL$>rCkLN&gqX6`'($5Kt9IR$0lC3p#k4T4#$9@du<2_Eir99W<d%%d9+@#nP%Aj9\!C&r]eAP4.b-orOiD?6BiM:rd$8Rrh)[CD2rIad<2qfeA#mOa)t+W0Y.m\8s[.:!)G$,R''JoF_g_tO-[A@d2>'4n`4GcanFFUMu>f#ls^#`N<^p$BTWONO_2JFUUe$-]SP0UVm@eoI'J^RO7&ifa197oM,4>E<2K@DVgF]k,#H%49LU,(OP]-i#3"W8bhA:R5>O7RX3c@'MlfCEE>59Jc_83L#(]sp';XT*r'5.2[-:2:q8\\k<&fp[;G)(n+u*H*:o.<h`O>FjR1sFH-;pqH^5/<D!?o@Q'NtF'8>\>nED67F;O1!3[8=S</8^J[=m!!VALlb=MH<MLB6DM_XR83>bH],hFR(nL3ZZn^onm'GGrRHXaGK##7)Nu#J>S=eQ.DjFHn?7TZ5%<,l,XDbG*T0_:80%**;4B/r<no'$tZidL9H`F3&h+?,bb52k4DPin^`"/:rI?MU0QUDL>D7hqLJ:,J8Zb3-$]GH49PJ.7ADP0,0D,+8^?O/\(j,K^R8D8+feBcD0d`#`PbPOS@.V@rABZG<La;jc]g&\mNk#(ei<g!145$:4(]]7X;mG(9`>p64'f16>k?g/3"YLT\;6;j@7HG1>+LLLq.[)9e)Be/d&!`>-rN+V]!T1'r`l4W3MD?i'BAcTq@nQuqZNmnF8L"([b.afMXgmI$LA+S)\@Uf@f,;\WG60I6$'XG$[+GJ>6JXRjDKI*a*qiq.WcEE78[m.`]*AD%aV$^F[X:;Rf0EA,<Dba#7VR;q%.nljuBB/k&?n.OT;=d!i]YlY-6^/)bt)`@RK&=l@DN/_\)u@Z+_Td^-BNL>,s34doRnE9*@37*\LcC'mot6QX\IWb`KH5(eZEV6!MMeXaPlh:XCTt-G/04kpD]rY]tpGAH%Hg$p'D&JIdsc^QY'GHJbUC-s@f^?V4)0F?1I+YG9]>#!-djX3!>g'cF>_"drs8kt8q"-:j!35%G!I[EaCu`IZ[7;YhtH^CreDm'Q,nE)8[b&UQLQH<A9W;DC/-?R(L@'X4G)Q;Y.`U3sMgZO]!f<c\t]ac73,d98bNn8tk_2r3>Q@GT$b&CqG79b(Go1KtU[B3Zj@UA.`>M%;A(J_VF>q,(&:JM;KPT\t#lg]>co`s#b!.;nAkEZ"p*'8^D*En%54Nd"C@(%,9oA[iFI3H)d`l^?TqE)mJ"%-L[0@AR4e@idU."m0HXa:O.iM`?hA_ZUn[V3_#\q0@k\g2_\0.4l21,JjoHLm?<EY2cC$%b:(GW:j7`37-A/'$@?r1(l)aPsXYiD#f2g0d%4SHpD(o_[Cp-(BS_NOt;7sXCa4TOVEs#.'=q>J<1'E,).&qn\/>]'S?gs=d`-(6GF+4Vc`QRhZ2?t(C0]JI>9pXe/;M.h4Ok-KPc)*YK_E"Z#KQRgZo1q*7+;[DSP5b*R?E+<c5q"p!$<FJQck`OSY.`_BqIMYM1.dr@b#Z:T(n\egLS9j"=H%k]G5l7qm][1\h"l4\etf(+;Ja*(5rI'Qe6%B+BqAP\W#aEtcGH/W7AnT[m8.oBHd8'iH)X@P6*Z//$(;n.6%2N=W60'\FNBM2]QXJ![HB-'@%eFqm!!\<Cbr/:o+ho!Pf>"KFkEF8WdPpB^QEE\4ClSoWES\btLUJsr[3BHb1I&GB')h%X=&WT[MPRbpMlh+l;'NZ6i!+q>%M(V0[s]OLsd@B@9HJsnP@5HZ73f,N_-e/(0eE&1!s58g=YGXiqo#_?E]^kS-"(^qL)9Ub7Z!AA4TbNkVj@@Z`.iS)C5&?irq_5=$(HDOg@lJp`#=rM.IKO>lp0ET[WWbX5qbH9`9U+eJSdZ'AX#"ZhJ[+H_\*3VEV3M-9>A/ps`a%;Lafd8=c`&FUP!N;.[S^KA<8ACjP'H(*f<m9mM+"hF]kLWB0$oW`NgI5MC(^pf&0Z/\i;/hT,03&5>9U<ol_F:,Flj*kQM/BQb(bo89n8mo5f;O%[cfik3p?[0KEdlDl\m6KMq0,rMqtq&ho*p:M`1(`\"M(t)DeY`fYS;C^(s<(%bA#Y1HsTHY0[M$D`p+2JDcJ_NVEr%Ihu&q5=uH,qYQDWeUD1$_i<MZ5"j\0.B]7cbH+8)Ua4Z;/cu6)?R-.ujg3okh67'Wi**s1]'5gONnU#ZsBsp?ierNZ&<G3opX,7rZ4GS6"cQ2L&,?bp4HX[K>W.*kiO=PPeF&]rqKq]/ub=r5=>u-7sWO08ApM`6u3:AmLZB^*H30MVk*0`RQ,L@VKPqW\$1^D*XX-g9:@XOhLJto"Kk6rmHZSTshO*WKCL_Mc7RI7h'V3WXolRS2'';kdQNR@egoC#tQGh[83Ar#eQP<'`5-,_,YC#.UZC]`73X(/E0A]pO$"1.*MAMOD4T@fE$JNiXte-9-gD8G_Kk;Fn6(!PUWX5AdoE:Hl+cQ'=Dd.eOVCm5,.Vb:RJ'%]c_nBhHVi,Z'$30"Waf-[:??YT\d*[:!.WC/dOJJ_M-LLU?U(#.XNXL6G!/[&S?qjXt1T?"j=dI>ufY\AQ1HffBgS(8W'E?=YU_S1?h#B$:g'/@hdIrAj)0L9uJ2Z<Y/Jp=H_fo-`>'&+0\qRbNq##`agUBBQQaQF(mmG=Ks.lmaKqf;=j#oVL^`*X\.T["Gla)E/G_oW`0::JOCDo=m#P(J\)U3f`(;I5.UP(6LFntZe7B6u,mL%APVF[>ke0h=3hbf0C$C.,XbQC:Qan-SUkF<f"MD@c?(*Ss6qBUZiRk(_`\au"VCOO*F\)fG!?._0@KcM%#:!S%WuP?l'uk?auf\<mFt1]=_;O]O]Y`uXS+okDF:=Q]LR.UgHk76XdV$P<NLF"KTfC5l3+'IldR)C0&LOq"69Bt9dXgU\7I7+jKlpQRlNg08-5<qqjT*J%72it>?_A,<T1&G;&gFOanAaDigFZ)ASMNb'(=+FC`F'f3SIi"t3<Gb^lY>f$^bDD:Y\Pk5/Z#7/@IaqqL2o=6(*PJJGmAU;^Wo]:CR!VN\HRV^Q":Z^mh33@)I;YR)eaaZf^<t-O52BmkJeMe'FNbNu;9m7o#AWDX*IIaB>\b4Em*?;]KEM'Ia9#^s0k&?fO&)B=n0>2;mNi3H9)D7&+&C1"u?$>CQ2fmTOjA4MTrh?sQFALD.^I#amiSSXYi*0J&o1ba'!7s<72oEb%gBioO(sBYQqjZol^"DW[r\PUN%X&(X#Hcr^6'%</=DoAM1RJ'ZDS*Ia7IQsEcB-E:UinPol,7[j9Q\W"VGS&3mMGHnICsJ+/es>ABXG-2D7JB0FN]AT?/N;0;g%c5\0">@O02f;Z4_KR5MsH@O8~>endstream
 endobj
 xref
-0 22
+0 17
 0000000000 65535 f 
-0000000015 00000 n 
-0000000083 00000 n 
-0000000142 00000 n 
-0000000382 00000 n 
-0000000618 00000 n 
-0000000850 00000 n 
-0000001064 00000 n 
-0000001296 00000 n 
-0000001534 00000 n 
-0000001567 00000 n 
-0000011588 00000 n 
-0000011734 00000 n 
-0000011826 00000 n 
-0000011934 00000 n 
-0000012042 00000 n 
-0000012151 00000 n 
-0000012260 00000 n 
-0000012370 00000 n 
-0000012481 00000 n 
-0000012816 00000 n 
-0000013232 00000 n 
+0000000061 00000 n 
+0000000122 00000 n 
+0000000229 00000 n 
+0000000337 00000 n 
+0000000446 00000 n 
+0000000645 00000 n 
+0000000821 00000 n 
+0000001007 00000 n 
+0000001117 00000 n 
+0000001328 00000 n 
+0000001539 00000 n 
+0000001734 00000 n 
+0000001980 00000 n 
+0000002050 00000 n 
+0000002346 00000 n 
+0000002407 00000 n 
 trailer
 <<
-/Size 22
-/Root 1 0 R
-/Info 19 0 R
-/ID [ <019565b06fd95d492206fc92cef11d30> <019565b06fd95d492206fc92cef11d30> ]
+/ID 
+[<cd51ad78822e8d37b076e166ba52a915><cd51ad78822e8d37b076e166ba52a915>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 14 0 R
+/Root 13 0 R
+/Size 17
 >>
 startxref
-13690
+6548
 %%EOF
