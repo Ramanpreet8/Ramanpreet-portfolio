@@ -22,8 +22,10 @@ document.querySelectorAll(".resume-link").forEach((anchor) => {
 });
 
 document.querySelectorAll(".repo-link").forEach((anchor) => {
-  const projectName = anchor.closest(".project").querySelector("h3").textContent;
-  wireLink(anchor, CONFIG.repoUrls[projectName], "Repository link not added yet.");
+  const heading = anchor.closest(".project").querySelector("h3").textContent.trim();
+  const matchKey = Object.keys(CONFIG.repoUrls).find((key) => heading.includes(key));
+  const url = matchKey ? CONFIG.repoUrls[matchKey] : anchor.getAttribute("href");
+  wireLink(anchor, url, "Repository link not added yet.");
 });
 
 const copyEmailBtn = document.getElementById("copy-email-btn");

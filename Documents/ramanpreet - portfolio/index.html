@@ -98,6 +98,10 @@
 <div class="eyebrow">Featured Projects</div><h2>Engineering &amp; Architecture</h2>
 <div class="grid projects">
 <article class="card project reveal">
+<div class="project-media">
+  <img src="assets/quiz-demo.gif" alt="Live Interactive Educational Game Gameplay Walkthrough" loading="lazy">
+  <span class="media-caption">Gameplay Walkthrough: Topic Selection, Host Lobby, Instant QR Join, Authoritative Timer, &amp; Leaderboards</span>
+</div>
 <div class="update-header">
   <span class="badge">MLH Hack Day</span>
 </div>
@@ -107,20 +111,90 @@
   <strong>Architecture &amp; Thinking:</strong>
   Engineered an authoritative Socket.IO state machine with shared TypeScript interfaces to prevent client-side desync and score tampering. Integrated Google Gemini API for on-the-fly custom trivia generation tailored to player-selected topics.
 </div>
+
+<details class="case-study-details">
+  <summary class="case-study-summary">
+    <span class="case-study-toggle-label">Read Case Study</span>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="case-study-content">
+    <div class="case-study-section">
+      <h4>Problem</h4>
+      <p>Classroom and hackathon trivia tools often demand cumbersome account creation or suffer from noticeable state lag between host projector displays and mobile player phones. The challenge was building and shipping a lag-free, instant-join multiplayer game within an intense 7-hour hackathon window.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>My Role &amp; Architecture</h4>
+      <p>Full-stack architect &amp; real-time systems lead. Designed the Node.js/Express server, configured Socket.IO room lifecycle orchestration, defined end-to-end TypeScript data contracts, and integrated the Google Gemini API for automated prompt-to-quiz generation.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Hard Bug &amp; Tradeoff</h4>
+      <p><em>Tradeoff:</em> Disallowed clients from running local timers or calculating score increments to prevent race conditions and tampering; centralized all transitions in a server tick state machine (Lobby &rarr; Question &rarr; Reveal &rarr; Leaderboard &rarr; Podium). <em>Hard Bug:</em> Rapid phase shifts caused out-of-order WebSocket packet delivery on mobile browsers. Fixed by attaching monotonic state sequence numbers and broadcasting synchronized server timestamps so client countdowns stayed frame-accurate.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Result</h4>
+      <p>Successfully shipped and live-demoed before judges at MLH Hack Day @ CityTech with zero state desync errors, supporting multiple concurrent players joining via QR codes/PINs, dynamic score streaks, and animated podium celebrations.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>What I'd Do Differently</h4>
+      <p>Add a Redis pub/sub adapter to scale the Socket.IO server horizontally across multiple instances, and cache generated trivia in a KV store to eliminate LLM generation latency during high traffic.</p>
+    </div>
+  </div>
+</details>
+
 <div class="tags"><span>React 18</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>Socket.IO</span><span>Google Gemini API</span></div>
 <a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/Live-interactive-educational-game" target="_blank" rel="noopener">GitHub</a>
 </article>
 
 <article class="card project reveal">
+<div class="project-media">
+  <img src="assets/nutribloom-dashboard.png" alt="NutriBloom Live Telemetry Dashboard" loading="lazy">
+  <span class="media-caption">Live Telemetry Dashboard: Macros over Time, Caloric Tracking, &amp; Daily Recommended Value (DRV) Progress</span>
+</div>
 <div class="update-header">
   <span class="badge">Full-Stack / AI-Augmented</span>
 </div>
 <h3><a href="https://nutribloom8.netlify.app/login" target="_blank" rel="noopener">NutriBloom — AI-Augmented Full-Stack Nutrition Platform</a></h3>
 <p>Extended a 5-person academic prototype into a solo full-stack platform; engineered biometric Mifflin-St Jeor DRV calculation, USDA FoodData API integration, and Recharts historical telemetry dashboards.</p>
+
+<div class="team-attribution">
+  <strong>Team Prototype (5 Contributors) vs. Solo Extension:</strong>
+  NutriBloom originated as a 5-person academic prototype where the team scoped initial concept wireframes. I architected the PostgreSQL database, authored the Prisma relational schema with cascade deletes, managed migrations, and built the full-stack "Any Day's Meals" feature. Later, I extended the project solo into a production-grade application—adding the biometric Mifflin-St Jeor DRV engine, USDA FoodData API integration, Recharts telemetry dashboards, Passport.js JWT auth, rate limiting, and an automated TDD suite (12 Jest/Supertest integration tests).
+</div>
+
 <div class="project-rationale">
   <strong>Architecture &amp; AI Engineering:</strong>
   Partnered with Google Antigravity via an AI-assisted TDD workflow (12 Jest/Supertest integration tests) to debug multi-item database loop flaws, harden API security with Passport.js JWT auth &amp; rate limiting, and author an idempotent database seeding engine for instant 1-click demo logins with API write protection.
 </div>
+
+<details class="case-study-details">
+  <summary class="case-study-summary">
+    <span class="case-study-toggle-label">Read Case Study</span>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="case-study-content">
+    <div class="case-study-section">
+      <h4>Problem</h4>
+      <p>Standard nutrition trackers either impose rigid, one-size-fits-all calorie goals or lock detailed macronutrient breakdown behind steep paywalls. Users needed an accessible, scientifically grounded tool pairing personalized biometric formulas with real USDA nutritional records.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>My Role &amp; Architecture</h4>
+      <p>Backend &amp; database lead during the 5-person prototype; sole full-stack architect for the production platform. Designed the React 19/Ionic responsive client, Express API gateway, PostgreSQL database using Prisma ORM, and Recharts visualization components.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Hard Bug &amp; Tradeoff</h4>
+      <p><em>Hard Bug:</em> Multi-item meal logging transactions occasionally resulted in partial inserts and orphaned child rows when network connections dropped. Solved by migrating from manual sequential queries to Prisma interactive transactions (<code>prisma.$transaction</code>) with strict ACID rollback semantics. <em>Tradeoff:</em> Live queries to USDA FoodData Central faced strict rate limits; solved by implementing client-side request debouncing and nutrient caching.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Result</h4>
+      <p>Shipped a production-grade web application deployed live on Netlify and Render with sub-second dashboard rendering, 100% test pass rate across 12 integration tests, and instant 1-click demo logins.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>What I'd Do Differently</h4>
+      <p>Integrate mobile camera barcode scanning for instant grocery logging, and precompute weekly telemetry summaries in PostgreSQL materialized views to optimize long-term query performance.</p>
+    </div>
+  </div>
+</details>
+
 <div class="tags"><span>React 19</span><span>Ionic</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>Recharts</span><span>Jest</span><span>CI/CD</span><span>Google Antigravity</span></div>
 <div class="row" style="margin-top: 1rem; gap: 0.5rem;">
   <a class="btn primary" href="https://nutribloom8.netlify.app/login" target="_blank" rel="noopener">Live Demo ↗</a>
@@ -129,6 +203,10 @@
 </article>
 
 <article class="card project reveal">
+<div class="project-media">
+  <img src="assets/air-pollution-chart.png" alt="Asthma Emergency Department Visits Disparity by NYC Borough" loading="lazy">
+  <span class="media-caption">Seaborn Analysis: Pediatric vs. Adult Asthma ED Visit Disparity Across NYC Boroughs (NYC Open Data)</span>
+</div>
 <div class="update-header">
   <span class="badge">Data Analysis</span>
 </div>
@@ -138,11 +216,45 @@
   <strong>Analytical Thinking:</strong>
   Filtered 19,827 air-quality readings and 48 health records in Pandas, isolating borough trends. Uncovered that the Bronx pediatric asthma ED visit rate was 284.3% higher than Staten Island's, while proving that a direct PM2.5 correlation was statistically unsupported due to disjoint collection years.
 </div>
+
+<details class="case-study-details">
+  <summary class="case-study-summary">
+    <span class="case-study-toggle-label">Read Case Study</span>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="case-study-content">
+    <div class="case-study-section">
+      <h4>Problem</h4>
+      <p>Public discourse frequently assumes fine particulate matter (PM2.5) has a direct, one-to-one correlation with acute pediatric asthma hospitalizations across NYC. However, combining disparate open municipal records without validating temporal collection methods risks false statistical conclusions.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>My Role &amp; Architecture</h4>
+      <p>Sole data analyst and visualization engineer. Extracted, cleaned, and reconciled municipal datasets from the NYC Environment &amp; Health Data Portal using Python, Pandas, NumPy, Seaborn, and Plotly in JupyterLab.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Hard Bug &amp; Tradeoff</h4>
+      <p><em>Analytical Trap:</em> Initial automated merges produced apparent correlations between PM2.5 peaks and pediatric asthma visits. However, data auditing revealed that municipal PM2.5 and asthma emergency department records were collected on incompatible, non-overlapping reporting cycles. Rather than presenting a flawed correlation, I proved that a direct causative link was statistically unsupported on the combined dataset and pivoted the analysis toward geographic disparity.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Result</h4>
+      <p>Analyzed 19,827 air-quality readings and 48 health records. Quantified that the Bronx pediatric asthma ED visit rate was 284.3% higher than Staten Island's, and synthesized findings into reproducible Jupyter notebooks with clean Seaborn and Plotly visualizations.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>What I'd Do Differently</h4>
+      <p>Integrate US Census socioeconomic indicators (median household income, housing age, proximity to heavy commercial freight truck routes) into a multivariable regression to model underlying social determinants of health.</p>
+    </div>
+  </div>
+</details>
+
 <div class="tags"><span>Python</span><span>Pandas</span><span>Seaborn</span><span>Plotly</span><span>JupyterLab</span></div>
 <a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/AirPollution.git" target="_blank" rel="noopener">GitHub</a>
 </article>
 
 <article class="card project reveal">
+<div class="project-media">
+  <img src="assets/clash-cup-lighthouse.svg" alt="Lighthouse 100/100 Performance Score for Global Clash Cup" loading="lazy">
+  <span class="media-caption">Performance Verification: Perfect 100 Lighthouse Scores across Performance, Accessibility, Best Practices, &amp; SEO</span>
+</div>
 <div class="update-header">
   <span class="badge">Frontend Web</span>
 </div>
@@ -152,8 +264,38 @@
   <strong>Engineering Decision:</strong>
   Engineered with native semantic HTML5, CSS custom properties, and vanilla DOM manipulation to eliminate framework overhead, resulting in sub-second load times and zero runtime dependencies.
 </div>
-<div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>DOM API</span><span>Responsive Design</span></div>
-<a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8" target="_blank" rel="noopener">GitHub</a>
+
+<details class="case-study-details">
+  <summary class="case-study-summary">
+    <span class="case-study-toggle-label">Read Case Study</span>
+    <span class="chevron">▼</span>
+  </summary>
+  <div class="case-study-content">
+    <div class="case-study-section">
+      <h4>Problem</h4>
+      <p>Community esports tournament sites frequently rely on bloated third-party CMS builders loaded with tracking scripts, causing multi-second load times, layout shifts, and battery drain for mobile gamers trying to quickly view match schedules.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>My Role &amp; Architecture</h4>
+      <p>Frontend engineer &amp; performance specialist. Designed and developed the entire tournament landing page from scratch, including responsive layouts, event RSVP flow, dynamic participant counter, and match countdown clock.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Hard Bug &amp; Tradeoff</h4>
+      <p><em>Tradeoff:</em> Completely eliminated heavy UI frameworks (React, Vue) and third-party CSS libraries in favor of semantic HTML5, modern CSS custom properties, and vanilla DOM APIs. <em>Hard Bug:</em> High-frequency timer intervals for the tournament countdown caused layout thrashing and high CPU usage on low-power mobile devices. Solved by aligning state updates with <code>requestAnimationFrame</code> and mutating only targeted text nodes.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Result</h4>
+      <p>Achieved verified sub-second load times (First Contentful Paint 0.28s, Largest Contentful Paint 0.45s, 0ms Total Blocking Time, 0 Cumulative Layout Shift) and a flawless 100/100/100/100 Google Lighthouse audit score with zero external dependencies.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>What I'd Do Differently</h4>
+      <p>Implement Server-Sent Events (SSE) or WebSockets to broadcast live tournament match bracket advances and broadcast stream statuses directly to clients in real time.</p>
+    </div>
+  </div>
+</details>
+
+<div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>DOM API</span><span>Responsive Design</span><span>Lighthouse 100</span></div>
+<a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/Global-Clash-Cup" target="_blank" rel="noopener">GitHub</a>
 </article>
 </div></div></section>
 

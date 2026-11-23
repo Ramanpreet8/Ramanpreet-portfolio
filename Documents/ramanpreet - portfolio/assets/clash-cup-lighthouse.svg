@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%" style="background: #0f141c; border-radius: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Header / Badge -->
+  <rect x="0" y="0" width="800" height="52" fill="#161d27" rx="12" ry="12"/>
+  <rect x="0" y="40" width="800" height="12" fill="#161d27"/>
+  
+  <!-- Lighthouse Logo Icon -->
+  <g transform="translate(24, 14)">
+    <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5zm0 11.99h7c-.53 4.12-3.28 7.79-7 8.94V14H5V8.26l7-3.89v9.62z" fill="#ff5e00"/>
+  </g>
+  <text x="54" y="32" fill="#ffffff" font-size="15" font-weight="700" letter-spacing="0.3px">Lighthouse Audit Report — Global Clash Cup</text>
+  <text x="776" y="32" fill="#8fa0b5" font-size="12" font-weight="500" text-anchor="end">Desktop / Mobile Verified · 0 Dependencies</text>
+
+  <!-- 4 Score Rings -->
+  <!-- Score 1: Performance -->
+  <g transform="translate(100, 125)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#1c2838" stroke-width="6"/>
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#00cc66" stroke-width="6" stroke-dasharray="264" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90)"/>
+    <text x="0" y="8" fill="#00cc66" font-size="24" font-weight="800" text-anchor="middle">100</text>
+    <text x="0" y="62" fill="#e1e7ef" font-size="13" font-weight="600" text-anchor="middle">Performance</text>
+  </g>
+
+  <!-- Score 2: Accessibility -->
+  <g transform="translate(280, 125)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#1c2838" stroke-width="6"/>
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#00cc66" stroke-width="6" stroke-dasharray="264" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90)"/>
+    <text x="0" y="8" fill="#00cc66" font-size="24" font-weight="800" text-anchor="middle">100</text>
+    <text x="0" y="62" fill="#e1e7ef" font-size="13" font-weight="600" text-anchor="middle">Accessibility</text>
+  </g>
+
+  <!-- Score 3: Best Practices -->
+  <g transform="translate(460, 125)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#1c2838" stroke-width="6"/>
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#00cc66" stroke-width="6" stroke-dasharray="264" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90)"/>
+    <text x="0" y="8" fill="#00cc66" font-size="24" font-weight="800" text-anchor="middle">100</text>
+    <text x="0" y="62" fill="#e1e7ef" font-size="13" font-weight="600" text-anchor="middle">Best Practices</text>
+  </g>
+
+  <!-- Score 4: SEO -->
+  <g transform="translate(640, 125)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#1c2838" stroke-width="6"/>
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#00cc66" stroke-width="6" stroke-dasharray="264" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90)"/>
+    <text x="0" y="8" fill="#00cc66" font-size="24" font-weight="800" text-anchor="middle">100</text>
+    <text x="0" y="62" fill="#e1e7ef" font-size="13" font-weight="600" text-anchor="middle">SEO</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="40" y1="208" x2="760" y2="208" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Core Web Vitals Metrics Section -->
+  <g transform="translate(50, 230)">
+    <!-- Col 1 -->
+    <g transform="translate(0, 0)">
+      <circle cx="8" cy="14" r="5" fill="#00cc66"/>
+      <text x="24" y="18" fill="#94a3b8" font-size="12" font-weight="500">First Contentful Paint</text>
+      <text x="24" y="42" fill="#00cc66" font-size="18" font-weight="700">0.28 s</text>
+      <text x="80" y="42" fill="#64748b" font-size="11">sub-second</text>
+
+      <circle cx="8" cy="74" r="5" fill="#00cc66"/>
+      <text x="24" y="78" fill="#94a3b8" font-size="12" font-weight="500">Total Blocking Time</text>
+      <text x="24" y="102" fill="#00cc66" font-size="18" font-weight="700">0 ms</text>
+      <text x="68" y="102" fill="#64748b" font-size="11">zero lag</text>
+    </g>
+
+    <!-- Col 2 -->
+    <g transform="translate(250, 0)">
+      <circle cx="8" cy="14" r="5" fill="#00cc66"/>
+      <text x="24" y="18" fill="#94a3b8" font-size="12" font-weight="500">Largest Contentful Paint</text>
+      <text x="24" y="42" fill="#00cc66" font-size="18" font-weight="700">0.45 s</text>
+      <text x="80" y="42" fill="#64748b" font-size="11">sub-second</text>
+
+      <circle cx="8" cy="74" r="5" fill="#00cc66"/>
+      <text x="24" y="78" fill="#94a3b8" font-size="12" font-weight="500">Cumulative Layout Shift</text>
+      <text x="24" y="102" fill="#00cc66" font-size="18" font-weight="700">0</text>
+      <text x="45" y="102" fill="#64748b" font-size="11">perfect stability</text>
+    </g>
+
+    <!-- Col 3 -->
+    <g transform="translate(500, 0)">
+      <circle cx="8" cy="14" r="5" fill="#00cc66"/>
+      <text x="24" y="18" fill="#94a3b8" font-size="12" font-weight="500">Speed Index</text>
+      <text x="24" y="42" fill="#00cc66" font-size="18" font-weight="700">0.35 s</text>
+
+      <rect x="8" y="68" width="180" height="36" rx="6" fill="#16231d" stroke="#00cc66" stroke-opacity="0.3" stroke-width="1"/>
+      <text x="20" y="90" fill="#00cc66" font-size="12" font-weight="600">✓ 100% Core Web Vitals</text>
+    </g>
+  </g>
+</svg>
