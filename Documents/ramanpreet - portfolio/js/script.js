@@ -22,9 +22,13 @@ document.querySelectorAll(".resume-link").forEach((anchor) => {
 });
 
 document.querySelectorAll(".repo-link").forEach((anchor) => {
+  const currentHref = anchor.getAttribute("href");
+  if (currentHref && currentHref !== "#" && currentHref.startsWith("http")) {
+    return;
+  }
   const heading = anchor.closest(".project").querySelector("h3").textContent.trim();
   const matchKey = Object.keys(CONFIG.repoUrls).find((key) => heading.includes(key));
-  const url = matchKey ? CONFIG.repoUrls[matchKey] : anchor.getAttribute("href");
+  const url = matchKey ? CONFIG.repoUrls[matchKey] : currentHref;
   wireLink(anchor, url, "Repository link not added yet.");
 });
 
