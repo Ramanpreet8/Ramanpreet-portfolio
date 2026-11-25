@@ -105,3 +105,64 @@ if ("IntersectionObserver" in window) {
 } else {
   setActiveSection("home");
 }
+
+
+
+// Certificate Modal & PDF Proof Viewer
+const certModal = document.getElementById("cert-modal");
+const certModalBackdrop = document.getElementById("cert-modal-backdrop");
+const certModalClose = document.getElementById("cert-modal-close");
+const certModalTitle = document.getElementById("cert-modal-title");
+const certModalIframe = document.getElementById("cert-modal-iframe");
+const certModalOpenLink = document.getElementById("cert-modal-open-link");
+const certModalFallbackLink = document.getElementById("cert-modal-fallback-link");
+let lastFocusedElement = null;
+
+function openCertModal(pdfUrl, title, triggerEl) {
+  if (!certModal) return;
+  lastFocusedElement = triggerEl || document.activeElement;
+  certModalTitle.textContent = title;
+  certModalIframe.src = pdfUrl;
+  certModalOpenLink.href = pdfUrl;
+  certModalFallbackLink.href = pdfUrl;
+  certModal.removeAttribute("hidden");
+  document.body.style.overflow = "hidden";
+  certModalClose.focus();
+}
+
+function closeCertModal() {
+  if (!certModal || certModal.hasAttribute("hidden")) return;
+  certModal.setAttribute("hidden", "");
+  certModalIframe.src = "";
+  document.body.style.overflow = "";
+  if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+    lastFocusedElement.focus();
+  }
+}
+
+document.querySelectorAll(".cert-badge").forEach((badge) => {
+  badge.addEventListener("click", (event) => {
+    // If user holds Ctrl, Cmd, Shift, or Alt, open normally in new tab
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+      return;
+    }
+    event.preventDefault();
+    const pdfUrl = badge.getAttribute("data-pdf") || badge.getAttribute("href");
+    const title = badge.getAttribute("data-title") || badge.textContent.trim();
+    openCertModal(pdfUrl, title, badge);
+  });
+});
+
+if (certModalClose) {
+  certModalClose.addEventListener("click", closeCertModal);
+}
+
+if (certModalBackdrop) {
+  certModalBackdrop.addEventListener("click", closeCertModal);
+}
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && certModal && !certModal.hasAttribute("hidden")) {
+    closeCertModal();
+  }
+});
