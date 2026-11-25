@@ -229,7 +229,8 @@ def generate_resume(output_pdf_path):
 
 if __name__ == '__main__':
     # 1. Update in portfolio assets
-    portfolio_asset_path = '/Users/ramanpreetsingh/Ramanpreet-portfolio/Documents/ramanpreet - portfolio/assets/Ramanpreet_Singh_Resume.pdf'
+    repo_dir = os.path.dirname(os.path.abspath(__file__))
+    portfolio_asset_path = os.path.join(repo_dir, 'assets', 'Ramanpreet_Singh_Resume.pdf')
     generate_resume(portfolio_asset_path)
 
     # 2. Update in user home directory
