@@ -160,9 +160,9 @@ def generate_resume(output_pdf_path):
     story.append(Paragraph("<b>Live Interactive Educational Game – MLH Hack Day @ CityTech</b>", item_title_bold))
     story.append(Paragraph('<a href="https://github.com/Ramanpreet8/Live-interactive-educational-game" color="black">https://github.com/Ramanpreet8/Live-interactive-educational-game</a>', link_style))
     story.append(Paragraph("React 18, TypeScript, Node.js, Express, Socket.IO, Google Gemini API", item_sub_italic))
-    story.append(Paragraph("• Co-developed a real-time multiplayer quiz platform under a 7-hour hackathon deadline, enabling instant zero-auth joins via dynamic QR and room codes.", bullet_style))
-    story.append(Paragraph("• Engineered a server-authoritative Socket.IO state machine with shared TypeScript contracts, centralizing game-state transitions and preventing clients from directly manipulating scores.", bullet_style))
-    story.append(Paragraph("• Integrated Google Gemini API for on-the-fly trivia generation and built synchronized countdown timers, answer streak tracking, and live leaderboards.", bullet_style))
+    story.append(Paragraph("• Co-developed a real-time multiplayer quiz platform in a team of 2 under a 7-hour hackathon deadline, personally building dynamic QR-code onboarding, room management, and game timers.", bullet_style))
+    story.append(Paragraph("• Integrated Google Gemini API for on-the-fly trivia generation and engineered Socket.IO room lifecycles with shared TypeScript contracts.", bullet_style))
+    story.append(Paragraph("• Synchronized live game state, countdown timers, and dynamic leaderboards across concurrent mobile devices during live demo.", bullet_style))
 
     # Project 2: NutriBloom (3 bullets)
     story.append(Spacer(1, 6))
@@ -199,7 +199,7 @@ def generate_resume(output_pdf_path):
     story.append(t6)
 
     story.append(Paragraph("• Investigated classical-to-quantum architectural translations under Prof. Marcos Pinto, evaluating 14 quantum computing claims against academic literature to distinguish functional models from theoretical hype.", bullet_style))
-    story.append(Paragraph("• Authored an academic research abstract and prepared a technical poster presentation detailing systems-level findings for the December 2026 CUNY ESP Symposium.", bullet_style))
+    story.append(Paragraph("• Authored an academic research abstract and presenting a technical poster presentation detailing systems-level findings for the upcoming December 2026 CUNY ESP Symposium.", bullet_style))
 
     # 5. CERTIFICATIONS
     add_section_divider("CERTIFICATIONS")

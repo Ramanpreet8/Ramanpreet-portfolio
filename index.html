@@ -30,15 +30,15 @@
 <a href="#home" class="logo">Ramanpreet<span>.</span></a>
 <button class="burger" id="burger" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
 <div class="links" id="links">
-<a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#updates">Updates</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+<a href="#home">Home</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#updates">Updates</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
 </div></nav></div></header>
 
 <main id="main-content">
 <section id="home"><div class="wrap">
 <div class="status-pill"><span class="status-dot"></span> NYC-Based · Available for Spring / Summer 2027 Internships</div>
 <div class="eyebrow">Aspiring Software Engineer | Computer Systems Technology Student</div>
-<h1>Building Software. Solving Problems. <em>Creating Impact.</em></h1>
-<p class="lead">Hi, I’m Ramanpreet Singh, an aspiring software engineer based in New York, NY. I’m looking for Software Engineering internship opportunities for Spring or Summer 2027.</p>
+<h1>Building Full-Stack Systems, Real-Time Apps, and <em>Data Pipelines.</em></h1>
+<p class="lead">Hi, I’m Ramanpreet Singh, a Computer Systems Technology student in New York building reliable software across TypeScript, Node.js, PostgreSQL, and Python. Seeking Summer 2027 Software Engineering internships.</p>
 <div class="row">
 <a class="btn primary" href="#projects">View My Projects</a>
 <a class="btn resume-link" href="assets/Ramanpreet_Singh_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
@@ -71,6 +71,176 @@
   </div>
 </div>
 </div></section>
+
+<section id="projects"><div class="wrap">
+<div class="eyebrow">Featured Projects</div><h2>Engineering &amp; Architecture</h2>
+<div class="grid projects">
+
+<article class="card project reveal">
+<div class="update-header">
+  <span class="badge">MLH Hack Day</span>
+</div>
+<h3>Live Interactive Educational Game</h3>
+<p class="project-desc">A real-time multiplayer quiz platform built in a team of 2 in under 7 hours at MLH Hack Day @ CityTech, featuring instant QR onboarding, live room management, Gemini API trivia generation, and synchronized game timers.</p>
+<p class="project-role"><strong>My Role:</strong> Co-developer (team of 2) — personally built the dynamic QR code onboarding, Google Gemini API integration, Socket.IO room management, and synchronized game timer.</p>
+<div class="tags">
+  <span>React 18</span>
+  <span>TypeScript</span>
+  <span>Node.js</span>
+  <span>Express</span>
+  <span>Socket.IO</span>
+  <span>Google Gemini API</span>
+</div>
+<div class="row project-actions">
+  <a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/Live-interactive-educational-game" target="_blank" rel="noopener">GitHub</a>
+</div>
+
+<details class="case-study-details">
+  <summary class="case-study-summary">
+    <span class="case-study-toggle-label">Read Case Study</span>
+    <span class="chevron" aria-hidden="true">▼</span>
+  </summary>
+  <div class="case-study-content">
+    <div class="project-media">
+      <img src="assets/quiz-demo.gif" alt="Live Interactive Educational Game Gameplay Walkthrough" width="840" height="520" loading="lazy">
+      <span class="media-caption">Gameplay Walkthrough: Topic Selection, Host Lobby, Instant QR Join, Authoritative Timer, &amp; Leaderboards</span>
+    </div>
+    <div class="case-study-section">
+      <h4>Problem</h4>
+      <p>Classroom and hackathon trivia tools often demand cumbersome account creation or suffer from noticeable state lag between host projector displays and mobile player phones. The challenge was building and shipping a lag-free, instant-join multiplayer game within an intense 7-hour hackathon window.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Architecture &amp; Decisions</h4>
+      <p>Centralized all game-state transitions in a server-authoritative Socket.IO state machine with end-to-end TypeScript contracts shared between client and server. By disallowing client-side timer manipulation and attaching monotonic sequence numbers to WebSocket events, countdowns and live leaderboards stayed synchronized across devices.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Hard Bug &amp; Tradeoff</h4>
+      <p><em>Tradeoff:</em> Disallowed clients from running local timers or calculating score increments to prevent race conditions; centralized all transitions in a server-authoritative tick state machine (Lobby &rarr; Question &rarr; Reveal &rarr; Leaderboard &rarr; Podium). <em>Hard Bug:</em> Rapid phase shifts caused out-of-order WebSocket packet delivery on mobile browsers. Fixed by attaching monotonic state sequence numbers and broadcasting synchronized server timestamps so countdowns stayed consistent across client devices.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Result</h4>
+      <p>Engineered a server-authoritative Socket.IO state machine with shared TypeScript contracts to govern room lifecycles and centralize state transitions on the backend, maintaining synchronized gameplay across concurrent mobile players joining via dynamic QR codes and PINs during the live MLH Hack Day demonstration.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>What I'd Do Differently</h4>
+      <p>Add a Redis pub/sub adapter to scale the Socket.IO server horizontally across multiple instances, and cache generated trivia in a KV store to eliminate LLM generation latency during high traffic.</p>
+    </div>
+  </div>
+</details>
+</article>
+
+<article class="card project reveal">
+<div class="update-header">
+  <span class="badge">Full-Stack</span>
+</div>
+<h3><a href="https://nutribloom8.netlify.app/login" target="_blank" rel="noopener">NutriBloom — Full-Stack Nutrition Tracking Platform</a></h3>
+<p class="project-desc">A full-stack nutrition tracking platform pairing personalized calorie calculations and USDA FoodData Central records with interactive Recharts telemetry dashboards and JWT authentication.</p>
+<p class="project-role"><strong>My Role:</strong> Backend &amp; database lead for original 5-person prototype; sole developer for extended platform, USDA API integration, Recharts dashboards, and 12-test suite.</p>
+<div class="tags">
+  <span>React 19</span>
+  <span>Ionic</span>
+  <span>Express</span>
+  <span>PostgreSQL</span>
+  <span>Prisma</span>
+  <span>Recharts</span>
+  <span>Jest</span>
+  <span>CI/CD</span>
+</div>
+<div class="row project-actions">
+  <a class="btn primary" href="https://nutribloom8.netlify.app/login" target="_blank" rel="noopener">Live Demo ↗</a>
+  <a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/NutriBloom.git" target="_blank" rel="noopener">GitHub</a>
+</div>
+
+<details class="case-study-details">
+  <summary class="case-study-summary">
+    <span class="case-study-toggle-label">Read Case Study</span>
+    <span class="chevron" aria-hidden="true">▼</span>
+  </summary>
+  <div class="case-study-content">
+    <div class="project-media">
+      <img src="assets/nutribloom-dashboard.png" alt="NutriBloom Live Telemetry Dashboard" width="1024" height="688" loading="lazy">
+      <span class="media-caption">Live Telemetry Dashboard: Macros over Time, Caloric Tracking, &amp; Daily Recommended Value (DRV) Progress</span>
+    </div>
+    <div class="case-study-section">
+      <h4>Problem</h4>
+      <p>Standard nutrition trackers either impose rigid, one-size-fits-all calorie goals or lock detailed macronutrient breakdown behind steep paywalls. Users needed an accessible, scientifically grounded tool pairing personalized biometric formulas with real USDA nutritional records.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Architecture &amp; Engineering</h4>
+      <p>Authored the PostgreSQL schema, Prisma migrations, and core meal-logging endpoints. Designed the React 19/Ionic client, Express API gateway, and Recharts telemetry dashboards; hardened the backend with Passport.js JWT authentication, express-rate-limit, and an idempotent database seeding engine for demo logins.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Hard Bug &amp; Tradeoff</h4>
+      <p><em>Hard Bug:</em> Multi-item meal logging transactions occasionally resulted in partial inserts and orphaned child rows when network connections dropped. Solved by migrating from manual sequential queries to Prisma interactive transactions (<code>prisma.$transaction</code>) with strict ACID rollback semantics. <em>Tradeoff:</em> Live queries to USDA FoodData Central faced strict rate limits; solved by implementing client-side request debouncing and nutrient caching.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Result</h4>
+      <p>Deployed full-stack application on Netlify and Render with 12 integration tests covering the meal-logging API, and instant 1-click demo logins.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>What I'd Do Differently</h4>
+      <p>Integrate mobile camera barcode scanning for instant grocery logging, and precompute weekly telemetry summaries in PostgreSQL materialized views to optimize long-term query performance.</p>
+    </div>
+  </div>
+</details>
+</article>
+
+<article class="card project reveal">
+<div class="update-header">
+  <span class="badge">Data Analysis</span>
+</div>
+<h3>Air Pollution &amp; Public Health Data Analysis</h3>
+<p class="project-desc">An environmental data analysis pipeline investigating whether fine particulate air pollution (PM2.5) directly correlates with pediatric asthma emergency room visits across New York City neighborhoods.</p>
+<p class="project-role"><strong>My Role:</strong> Sole Data Analyst &amp; Visualization Engineer — extracted, cleaned, and reconciled municipal datasets using Python, Pandas, NumPy, SciPy, Seaborn, and Plotly in JupyterLab.</p>
+<div class="tags">
+  <span>Python</span>
+  <span>Pandas</span>
+  <span>NumPy</span>
+  <span>SciPy</span>
+  <span>Seaborn</span>
+  <span>Plotly</span>
+  <span>JupyterLab</span>
+</div>
+<div class="row project-actions">
+  <a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/AirPollution" target="_blank" rel="noopener">GitHub</a>
+</div>
+
+<details class="case-study-details">
+  <summary class="case-study-summary">
+    <span class="case-study-toggle-label">Read Case Study</span>
+    <span class="chevron" aria-hidden="true">▼</span>
+  </summary>
+  <div class="case-study-content">
+    <div class="project-media">
+      <img src="assets/air-pollution-chart.png" alt="Scatter plot of PM2.5 vs. asthma ED rates across 42 NYC neighborhoods, 2009–2019" width="1600" height="662" loading="lazy">
+      <span class="media-caption">Seaborn Analysis: Scatter plot of PM2.5 vs. asthma ED rates across 42 NYC neighborhoods (NYC Open Data)</span>
+    </div>
+    <div class="case-study-section">
+      <h4>Problem</h4>
+      <p>Public discourse frequently assumes fine particulate matter (PM2.5) has a direct, one-to-one correlation with acute pediatric asthma hospitalizations across NYC. However, combining disparate open municipal records without validating temporal collection methods risks false statistical conclusions.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Analytical Thinking &amp; Validation</h4>
+      <p>Reconciled 19,827 air-quality and 48 health records in Python, caught and resolved a dataset double-counting error that doubled visit counts, and expanded from an underpowered 5-borough test to a 42-neighborhood sample (n = 168) to obtain statistically defensible findings.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Hard Bug &amp; Tradeoff</h4>
+      <p><em>Bug:</em> The asthma dataset reports both borough and neighborhood rows for the same visits, and my grouping summed both, doubling every count. I fixed the filter and added a check that borough totals match the citywide row.</p>
+      <p><em>Analytical trap:</em> A 5-borough correlation looked strong (r = 0.78) but wasn't significant (p = 0.12). Moving to 42 neighborhoods across matched time periods gave a weaker, more honest result (r = 0.28, p &lt; 0.001). I also documented that "visits due to PM2.5" are Health Department estimates partly calculated from PM2.5 itself, so some correlation is built in.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>Result</h4>
+      <p>Delivered three reproducible notebooks analyzing 19,827 air-quality and 48 health records across 42 neighborhoods (n = 168). Verified key findings: Bronx pediatric asthma ED rates were 3.8× Staten Island's, and PM2.5 levels dropped ~40% between 2009 and 2024.</p>
+    </div>
+    <div class="case-study-section">
+      <h4>What I'd Do Differently</h4>
+      <p>Repeat the analysis with total observed asthma ED visits (not derived from PM2.5), and add Census income and housing data in a multivariable regression to separate pollution from socioeconomic factors.</p>
+    </div>
+  </div>
+</details>
+</article>
+
+</div></div></section>
 
 <section id="about"><div class="wrap">
 <div class="eyebrow">About Me</div><h2>Turning ideas into functional software</h2>
@@ -114,190 +284,6 @@
 </div>
 </div></div></section>
 
-<section id="projects"><div class="wrap">
-<div class="eyebrow">Featured Projects</div><h2>Engineering &amp; Architecture</h2>
-<div class="grid projects">
-<article class="card project reveal">
-<div class="project-media">
-  <img src="assets/quiz-demo.gif" alt="Live Interactive Educational Game Gameplay Walkthrough" width="840" height="520" loading="lazy">
-  <span class="media-caption">Gameplay Walkthrough: Topic Selection, Host Lobby, Instant QR Join, Authoritative Timer, &amp; Leaderboards</span>
-</div>
-<div class="update-header">
-  <span class="badge">MLH Hack Day</span>
-</div>
-<h3>Live Interactive Educational Game</h3>
-<p>A real-time multiplayer quiz platform built in under 7 hours at MLH Hack Day @ CityTech, featuring server-authoritative Socket.IO room management, instant QR-code player onboarding, and dynamic score leaderboards.</p>
-<div class="project-rationale">
-  <strong>Architecture &amp; Engineering Decisions:</strong>
-  Centralized all game-state transitions in a server-authoritative Socket.IO state machine with end-to-end TypeScript contracts shared between client and server. By disallowing client-side timer manipulation and attaching monotonic sequence numbers to WebSocket events, the architecture prevented client score tampering and kept countdowns and live leaderboards synchronized across devices. Integrated Google Gemini API for dynamic trivia generation tailored to player-selected topics.
-</div>
-
-<details class="case-study-details">
-  <summary class="case-study-summary">
-    <span class="case-study-toggle-label">Read Case Study</span>
-    <span class="chevron">▼</span>
-  </summary>
-  <div class="case-study-content">
-    <div class="case-study-section">
-      <h4>Problem</h4>
-      <p>Classroom and hackathon trivia tools often demand cumbersome account creation or suffer from noticeable state lag between host projector displays and mobile player phones. The challenge was building and shipping a lag-free, instant-join multiplayer game within an intense 7-hour hackathon window.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>My Role &amp; Architecture</h4>
-      <p>Co-built the application in a team of 2 during a 7-hour hackathon. I focused on backend systems: built the Node.js/Express server, configured Socket.IO room lifecycle orchestration, defined shared TypeScript data contracts, and integrated the Google Gemini API for question generation.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>Hard Bug &amp; Tradeoff</h4>
-      <p><em>Tradeoff:</em> Disallowed clients from running local timers or calculating score increments to prevent race conditions and tampering; centralized all transitions in a server-authoritative tick state machine (Lobby &rarr; Question &rarr; Reveal &rarr; Leaderboard &rarr; Podium). <em>Hard Bug:</em> Rapid phase shifts caused out-of-order WebSocket packet delivery on mobile browsers. Fixed by attaching monotonic state sequence numbers and broadcasting synchronized server timestamps so countdowns stayed consistent across client devices.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>Result</h4>
-      <p>Engineered a server-authoritative Socket.IO state machine with shared TypeScript contracts to govern room lifecycles and centralize state transitions on the backend, preventing client-side score manipulation and maintaining synchronized gameplay across concurrent mobile players joining via dynamic QR codes and PINs during the live MLH Hack Day demonstration.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>What I'd Do Differently</h4>
-      <p>Add a Redis pub/sub adapter to scale the Socket.IO server horizontally across multiple instances, and cache generated trivia in a KV store to eliminate LLM generation latency during high traffic.</p>
-    </div>
-  </div>
-</details>
-
-<div class="tags">
-  <span>React 18</span>
-  <span>TypeScript</span>
-  <span>Node.js</span>
-  <span>Express</span>
-  <span>Socket.IO</span>
-  <span>Google Gemini API</span>
-</div>
-<a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/Live-interactive-educational-game" target="_blank" rel="noopener">GitHub</a>
-</article>
-
-<article class="card project reveal">
-<div class="project-media">
-  <img src="assets/nutribloom-dashboard.png" alt="NutriBloom Live Telemetry Dashboard" width="1024" height="688" loading="lazy">
-  <span class="media-caption">Live Telemetry Dashboard: Macros over Time, Caloric Tracking, &amp; Daily Recommended Value (DRV) Progress</span>
-</div>
-<div class="update-header">
-  <span class="badge">Full-Stack</span>
-</div>
-<h3><a href="https://nutribloom8.netlify.app/login" target="_blank" rel="noopener">NutriBloom — Full-Stack Nutrition Tracking Platform</a></h3>
-<p>NutriBloom began as a five-person academic prototype, where I served as backend and database lead. I later independently extended the application with personalized calorie calculations, USDA FoodData Central integration, historical nutrition dashboards, JWT authentication, rate limiting, and integration testing.</p>
-
-<div class="team-attribution">
-  <strong>My Role &amp; Independent Extension:</strong>
-  In the original five-person academic prototype, I authored the PostgreSQL schema, Prisma migrations, and the core meal-logging endpoints. During the independent extension phase, I engineered the end-to-end application: integrating the USDA FoodData Central REST API, building interactive Recharts telemetry dashboards, and hardening the backend with Passport.js JWT authentication, express-rate-limit, and 12 automated Jest/Supertest integration tests.
-</div>
-
-<div class="project-rationale">
-  <strong>Architecture &amp; Engineering:</strong>
-  Authored 12 Jest and Supertest integration tests; diagnosed and resolved a multi-item database transaction bug using Prisma interactive transactions, corrected UUID parsing errors, implemented Passport.js JWT authentication and rate limiting, and built an idempotent database seeding engine for write-protected demo logins.
-</div>
-
-<details class="case-study-details">
-  <summary class="case-study-summary">
-    <span class="case-study-toggle-label">Read Case Study</span>
-    <span class="chevron">▼</span>
-  </summary>
-  <div class="case-study-content">
-    <div class="case-study-section">
-      <h4>Problem</h4>
-      <p>Standard nutrition trackers either impose rigid, one-size-fits-all calorie goals or lock detailed macronutrient breakdown behind steep paywalls. Users needed an accessible, scientifically grounded tool pairing personalized biometric formulas with real USDA nutritional records.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>My Role &amp; Architecture</h4>
-      <p>Backend and database lead for the original 5-person prototype; sole developer for the extended platform. Designed the React 19/Ionic client, Express API gateway, PostgreSQL database with Prisma ORM, and Recharts visualization dashboards.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>Hard Bug &amp; Tradeoff</h4>
-      <p><em>Hard Bug:</em> Multi-item meal logging transactions occasionally resulted in partial inserts and orphaned child rows when network connections dropped. Solved by migrating from manual sequential queries to Prisma interactive transactions (<code>prisma.$transaction</code>) with strict ACID rollback semantics. <em>Tradeoff:</em> Live queries to USDA FoodData Central faced strict rate limits; solved by implementing client-side request debouncing and nutrient caching.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>Result</h4>
-      <p>Deployed full-stack application on Netlify and Render with sub-second dashboard rendering, a 100% pass rate across 12 Jest and Supertest integration tests, and instant 1-click demo logins.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>What I'd Do Differently</h4>
-      <p>Integrate mobile camera barcode scanning for instant grocery logging, and precompute weekly telemetry summaries in PostgreSQL materialized views to optimize long-term query performance.</p>
-    </div>
-  </div>
-</details>
-
-<div class="tags">
-  <span>React 19</span>
-  <span>Ionic</span>
-  <span>Express</span>
-  <span>PostgreSQL</span>
-  <span>Prisma</span>
-  <span>Recharts</span>
-  <span>Jest</span>
-  <span>CI/CD</span>
-</div>
-<div class="row" style="margin-top: 1rem; gap: 0.5rem;">
-  <a class="btn primary" href="https://nutribloom8.netlify.app/login" target="_blank" rel="noopener">Live Demo ↗</a>
-  <a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/NutriBloom.git" target="_blank" rel="noopener">GitHub</a>
-</div>
-</article>
-
-<article class="card project reveal">
-<div class="project-media">
-  <img src="assets/air-pollution-chart.png" alt="Scatter plot of PM2.5 vs. asthma ED rates across 42 NYC neighborhoods, 2009–2019" width="1600" height="662" loading="lazy">
-  <span class="media-caption">Seaborn Analysis: Pediatric vs. Adult Asthma ED Visit Disparity Across NYC Boroughs (NYC Open Data)</span>
-</div>
-<div class="update-header">
-  <span class="badge">Data Analysis</span>
-</div>
-<h3>Air Pollution &amp; Public Health Data Analysis</h3>
-<p>An environmental data analysis pipeline investigating whether fine particulate air pollution (PM2.5) directly correlates with pediatric asthma emergency room visits across New York City neighborhoods.</p>
-<div class="project-rationale">
-  <strong>Analytical Thinking &amp; Validation:</strong>
-  Reconciled 19,827 air-quality and 48 health records in Python, caught and resolved a dataset double-counting error that doubled visit counts, and expanded from an underpowered 5-borough test to a 42-neighborhood sample (n = 168) to obtain statistically defensible findings.
-</div>
-
-<details class="case-study-details">
-  <summary class="case-study-summary">
-    <span class="case-study-toggle-label">Read Case Study</span>
-    <span class="chevron">▼</span>
-  </summary>
-  <div class="case-study-content">
-    <div class="case-study-section">
-      <h4>Problem</h4>
-      <p>Public discourse frequently assumes fine particulate matter (PM2.5) has a direct, one-to-one correlation with acute pediatric asthma hospitalizations across NYC. However, combining disparate open municipal records without validating temporal collection methods risks false statistical conclusions.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>My Role &amp; Architecture</h4>
-      <p>Sole data analyst and visualization engineer. Extracted, cleaned, and reconciled municipal datasets from NYC Open Data and the NYC Environment &amp; Health Data Portal using Python, Pandas, NumPy, SciPy, Seaborn, and Plotly in JupyterLab.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>Hard Bug &amp; Tradeoff</h4>
-      <p><em>Bug:</em> The asthma dataset reports both borough and neighborhood rows for the same visits, and my grouping summed both, doubling every count. I fixed the filter and added a check that borough totals match the citywide row.</p>
-      <p><em>Analytical trap:</em> A 5-borough correlation looked strong (r = 0.78) but wasn't significant (p = 0.12). Moving to 42 neighborhoods across matched time periods gave a weaker, more honest result (r = 0.28, p &lt; 0.001). I also documented that "visits due to PM2.5" are Health Department estimates partly calculated from PM2.5 itself, so some correlation is built in.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>Result</h4>
-      <p>Delivered three reproducible notebooks analyzing 19,827 air-quality and 48 health records across 42 neighborhoods (n = 168). Verified key findings: Bronx pediatric asthma ED rates were 3.8× Staten Island's, and PM2.5 levels dropped ~40% between 2009 and 2024.</p>
-    </div>
-    <div class="case-study-section">
-      <h4>What I'd Do Differently</h4>
-      <p>Repeat the analysis with total observed asthma ED visits (not derived from PM2.5), and add Census income and housing data in a multivariable regression to separate pollution from socioeconomic factors.</p>
-    </div>
-  </div>
-</details>
-
-<div class="tags">
-  <span>Python</span>
-  <span>Pandas</span>
-  <span>NumPy</span>
-  <span>SciPy</span>
-  <span>Seaborn</span>
-  <span>Plotly</span>
-  <span>JupyterLab</span>
-</div>
-<a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/AirPollution" target="_blank" rel="noopener">GitHub</a>
-</article>
-
-
-</div></div></section>
-
 <section id="updates"><div class="wrap">
 <div class="eyebrow">Reflections &amp; Milestones</div><h2>Field notes &amp; recent events</h2>
 <div class="grid updates">
@@ -306,8 +292,8 @@
 <span class="update-date">Dec 2026</span>
 <span class="badge">Research Symposium</span>
 </div>
-<h3>Preparing to Present "From Bits to Qubits" at the CUNY ESP Symposium</h3>
-<p>Under the mentorship of Prof. Marcos Pinto in the Emerging Scholars Program (ESP), I am researching how classical computing principles map onto quantum architectures. I evaluated 14 quantum computing claims against published academic literature to distinguish functional models from theoretical hype, and I am currently preparing the technical abstract and poster to present at the December 2026 CUNY ESP Symposium.</p>
+<h3>Presenting "From Bits to Qubits" at the CUNY ESP Symposium</h3>
+<p>Under the mentorship of Prof. Marcos Pinto in the Emerging Scholars Program (ESP), I am researching how classical computing principles map onto quantum architectures. I evaluated 14 quantum computing claims against published academic literature to distinguish functional models from theoretical hype, and will be presenting the technical abstract and poster presentation at the upcoming December 2026 CUNY ESP Symposium.</p>
 <div class="reflection-takeaway">
 <strong>Key Reflection:</strong> Critically evaluating quantum systems claims against published academic literature reinforces that rigorous verification must always precede implementation when separating genuine computing advances from theoretical speculation.
 </div>
@@ -325,7 +311,7 @@
 <span class="badge">Hackathon</span>
 </div>
 <h3>Shipping a Real-Time Multiplayer Quiz in Under 7 Hours</h3>
-<p>Competed at MLH Hack Day @ CityTech, co-building and deploying a real-time multiplayer educational quiz platform in under 7 hours. I developed the Socket.IO backend, integrated the Google Gemini API for dynamic question generation, and engineered shared TypeScript contracts to keep multiplayer state synchronized.</p>
+<p>Competed at MLH Hack Day @ CityTech in a team of 2, co-building and deploying a real-time multiplayer educational quiz platform in under 7 hours. I personally built the QR code player onboarding, Google Gemini API trivia integration, Socket.IO room management, and synchronized countdown timers.</p>
 <div class="reflection-takeaway">
 <strong>Key Reflection:</strong> High-pressure sprints demand ruthless prioritization. Designing strict shared TypeScript contracts between client and server upfront maintained synchronized game state across clients during the live demo.
 </div>

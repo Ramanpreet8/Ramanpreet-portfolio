@@ -440,6 +440,45 @@ h2 {
   line-height: 1.6;
 }
 
+.project-desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0 0 12px;
+}
+
+.project-role {
+  font-size: 13px;
+  color: #cbd5e1;
+  line-height: 1.5;
+  margin: 0 0 14px;
+}
+
+.project-role strong {
+  color: var(--accent2);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.project .tags {
+  margin-bottom: 14px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.project .case-study-details {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
 .project-rationale {
   background: rgba(255, 255, 255, 0.025);
   border-left: 3px solid var(--accent);
