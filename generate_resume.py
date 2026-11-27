@@ -169,7 +169,7 @@ def generate_resume(output_pdf_path):
     story.append(Paragraph("<b>NutriBloom — Full-Stack Nutrition Tracking Platform</b>", item_title_bold))
     story.append(Paragraph('<a href="https://nutribloom8.netlify.app/login" color="black">https://nutribloom8.netlify.app/login</a>', link_style))
     story.append(Paragraph("React 19, Ionic, Express, PostgreSQL, Prisma, Recharts, Jest, GitHub Actions", item_sub_italic))
-    story.append(Paragraph("• Served as backend and database lead for the original five-person prototype, then independently extended the application with Mifflin-St Jeor calculations, USDA FoodData Central integration, and historical nutrition dashboards.", bullet_style))
+    story.append(Paragraph("• Served as backend and database lead for the original five-person prototype, then independently extended the application with personalized calorie calculations, USDA FoodData Central integration, and historical nutrition dashboards.", bullet_style))
     story.append(Paragraph("• Authored 12 Jest and Supertest integration tests; resolved multi-item database transaction rollbacks using Prisma interactive transactions and corrected UUID parsing errors.", bullet_style))
     story.append(Paragraph("• Implemented Passport.js JWT authentication, rate limiting, and an idempotent database seeding engine for write-protected demo accounts; automated CI/CD deployments to Netlify and Render.", bullet_style))
 

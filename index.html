@@ -128,8 +128,8 @@
 <h3>Live Interactive Educational Game</h3>
 <p>A real-time multiplayer quiz platform built in under 7 hours at MLH Hack Day @ CityTech, featuring server-authoritative Socket.IO room management, instant QR-code player onboarding, and dynamic score leaderboards.</p>
 <div class="project-rationale">
-  <strong>Architecture &amp; Thinking:</strong>
-  Engineered a server-authoritative Socket.IO state machine with shared TypeScript contracts, centralizing game-state transitions and preventing clients from directly manipulating scores. Integrated Google Gemini API to generate tailored trivia questions dynamically from player-selected topics.
+  <strong>Architecture &amp; Engineering Decisions:</strong>
+  Centralized all game-state transitions in a server-authoritative Socket.IO state machine with end-to-end TypeScript contracts shared between client and server. By disallowing client-side timer manipulation and attaching monotonic sequence numbers to WebSocket events, the architecture prevented client score tampering and kept countdowns and live leaderboards synchronized across devices. Integrated Google Gemini API for dynamic trivia generation tailored to player-selected topics.
 </div>
 
 <details class="case-study-details">
@@ -152,7 +152,7 @@
     </div>
     <div class="case-study-section">
       <h4>Result</h4>
-      <p>Successfully deployed and live-demoed before judges at MLH Hack Day @ CityTech, supporting concurrent players joining via dynamic QR codes and PINs, live score streaks, and animated podium rankings.</p>
+      <p>Engineered a server-authoritative Socket.IO state machine with shared TypeScript contracts to govern room lifecycles and centralize state transitions on the backend, preventing client-side score manipulation and maintaining synchronized gameplay across concurrent mobile players joining via dynamic QR codes and PINs during the live MLH Hack Day demonstration.</p>
     </div>
     <div class="case-study-section">
       <h4>What I'd Do Differently</h4>
@@ -181,11 +181,11 @@
   <span class="badge">Full-Stack</span>
 </div>
 <h3><a href="https://nutribloom8.netlify.app/login" target="_blank" rel="noopener">NutriBloom — Full-Stack Nutrition Tracking Platform</a></h3>
-<p>NutriBloom began as a five-person academic prototype, where I served as backend and database lead. I later independently extended the application, implementing personalized calorie calculations, USDA FoodData Central integration, historical nutrition dashboards, JWT authentication, rate limiting, and integration testing.</p>
+<p>NutriBloom began as a five-person academic prototype, where I served as backend and database lead. I later independently extended the application with personalized calorie calculations, USDA FoodData Central integration, historical nutrition dashboards, JWT authentication, rate limiting, and integration testing.</p>
 
 <div class="team-attribution">
   <strong>My Role &amp; Independent Extension:</strong>
-  Served as backend and database lead for the original five-person prototype, authoring the PostgreSQL schema and Prisma migrations and implementing the "Any Day's Meals" feature. I then independently extended the application into a full-stack application, implementing personalized calorie calculations, USDA FoodData Central integration, Recharts historical telemetry dashboards, Passport.js JWT authentication, rate limiting, and 12 automated integration tests.
+  In the original five-person academic prototype, I authored the PostgreSQL schema, Prisma migrations, and the core meal-logging endpoints. During the independent extension phase, I engineered the end-to-end application: integrating the USDA FoodData Central REST API, building interactive Recharts telemetry dashboards, and hardening the backend with Passport.js JWT authentication, express-rate-limit, and 12 automated Jest/Supertest integration tests.
 </div>
 
 <div class="project-rationale">
