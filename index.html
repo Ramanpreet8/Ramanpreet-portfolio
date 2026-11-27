@@ -204,7 +204,7 @@
 
 <article class="card project reveal">
 <div class="project-media">
-  <img src="assets/air-pollution-chart.png" alt="Asthma Emergency Department Visits Disparity by NYC Borough" loading="lazy">
+  <img src="assets/air-pollution-chart.png" alt="Scatter plot of PM2.5 vs. asthma ED rates across 42 NYC neighborhoods, 2009–2019" loading="lazy">
   <span class="media-caption">Seaborn Analysis: Pediatric vs. Adult Asthma ED Visit Disparity Across NYC Boroughs (NYC Open Data)</span>
 </div>
 <div class="update-header">
@@ -214,7 +214,7 @@
 <p>An exploratory data pipeline analyzing environmental disparity across NYC boroughs by integrating municipal open air-quality records and pediatric health outcomes.</p>
 <div class="project-rationale">
   <strong>Analytical Thinking:</strong>
-  Filtered 19,827 air-quality readings and 48 health records in Pandas, isolating borough trends. Uncovered that the Bronx pediatric asthma ED visit rate was 284.3% higher than Staten Island's, while proving that a direct PM2.5 correlation was statistically unsupported due to disjoint collection years.
+  Merged 19,827 air-quality and 48 health records, then audited my own pipeline: caught a double-counting bug that doubled visit totals, and ran a time-matched neighborhood-level analysis (n = 168) instead of relying on a 5-borough correlation that wasn't statistically significant.
 </div>
 
 <details class="case-study-details">
@@ -229,25 +229,26 @@
     </div>
     <div class="case-study-section">
       <h4>My Role &amp; Architecture</h4>
-      <p>Sole data analyst and visualization engineer. Extracted, cleaned, and reconciled municipal datasets from the NYC Environment &amp; Health Data Portal using Python, Pandas, NumPy, Seaborn, and Plotly in JupyterLab.</p>
+      <p>Sole data analyst and visualization engineer. Extracted, cleaned, and reconciled municipal datasets from NYC Open Data and the NYC Environment &amp; Health Data Portal using Python, Pandas, NumPy, SciPy, Seaborn, and Plotly in JupyterLab.</p>
     </div>
     <div class="case-study-section">
       <h4>Hard Bug &amp; Tradeoff</h4>
-      <p><em>Analytical Trap:</em> Initial automated merges produced apparent correlations between PM2.5 peaks and pediatric asthma visits. However, data auditing revealed that municipal PM2.5 and asthma emergency department records were collected on incompatible, non-overlapping reporting cycles. Rather than presenting a flawed correlation, I proved that a direct causative link was statistically unsupported on the combined dataset and pivoted the analysis toward geographic disparity.</p>
+      <p><em>Bug:</em> The asthma dataset reports both borough and neighborhood rows for the same visits, and my grouping summed both, doubling every count. I fixed the filter and added a check that borough totals match the citywide row.</p>
+      <p><em>Analytical trap:</em> A 5-borough correlation looked strong (r = 0.78) but wasn't significant (p = 0.12). Moving to 42 neighborhoods across matched time periods gave a weaker, more honest result (r = 0.28, p &lt; 0.001). I also documented that "visits due to PM2.5" are Health Department estimates partly calculated from PM2.5 itself, so some correlation is built in.</p>
     </div>
     <div class="case-study-section">
       <h4>Result</h4>
-      <p>Analyzed 19,827 air-quality readings and 48 health records. Quantified that the Bronx pediatric asthma ED visit rate was 284.3% higher than Staten Island's, and synthesized findings into reproducible Jupyter notebooks with clean Seaborn and Plotly visualizations.</p>
+      <p>Delivered three reproducible notebooks with verified figures. The Bronx pediatric asthma ED rate was 3.8× Staten Island's; PM2.5 fell ~40% from 2009 to 2024, and attributable asthma ED rates fell ~50% from 2005 to 2019.</p>
     </div>
     <div class="case-study-section">
       <h4>What I'd Do Differently</h4>
-      <p>Integrate US Census socioeconomic indicators (median household income, housing age, proximity to heavy commercial freight truck routes) into a multivariable regression to model underlying social determinants of health.</p>
+      <p>Repeat the analysis with total observed asthma ED visits (not derived from PM2.5), and add Census income and housing data in a multivariable regression to separate pollution from socioeconomic factors.</p>
     </div>
   </div>
 </details>
 
-<div class="tags"><span>Python</span><span>Pandas</span><span>Seaborn</span><span>Plotly</span><span>JupyterLab</span></div>
-<a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/AirPollution.git" target="_blank" rel="noopener">GitHub</a>
+<div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>SciPy</span><span>Seaborn</span><span>Plotly</span><span>JupyterLab</span></div>
+<a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/AirPollution" target="_blank" rel="noopener">GitHub</a>
 </article>
 
 

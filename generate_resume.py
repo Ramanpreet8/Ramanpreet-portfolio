@@ -187,11 +187,12 @@ def generate_resume(output_pdf_path):
     # Project 3: Air Pollution
     story.append(Spacer(1, 2))
     story.append(Paragraph("<b>Air Pollution & Public Health Data Analysis</b>", item_title_bold))
-    story.append(Paragraph(f'<a href="https://github.com/Ramanpreet8/AirPollution.git" color="{primary_color}">https://github.com/Ramanpreet8/AirPollution.git</a>', link_style))
-    story.append(Paragraph("Python, Pandas, Seaborn, Plotly", item_sub_italic))
-    story.append(Paragraph("• Merged 19,827 air-quality rows and 48 asthma rows in Pandas, filtering out 7,439 out-of-scope records to isolate borough-level data for analysis.", bullet_style))
-    story.append(Paragraph("• Compared children's asthma ED visit rates across NYC boroughs, finding the Bronx rate was 284.3% higher than Staten Island's (212.5 vs. 55.3 per 100k).", bullet_style))
-    story.append(Paragraph("• Visualized borough-level disparities in Seaborn and Plotly; tested for a PM2.5-asthma correlation and found it unsupported due to 0 overlapping years.", bullet_style))
+    story.append(Paragraph(f'<a href="https://github.com/Ramanpreet8/AirPollution" color="{primary_color}">https://github.com/Ramanpreet8/AirPollution</a>', link_style))
+    story.append(Paragraph("Python, Pandas, NumPy, SciPy, Seaborn, Matplotlib, Plotly, JupyterLab | Tooling: Google Antigravity", item_sub_italic))
+    story.append(Paragraph("• Merged 19,827 air-quality and 48 health records from NYC Open Data, filtering out 7,439 out-of-scope records to isolate borough and neighborhood trends.", bullet_style))
+    story.append(Paragraph("• Compared pediatric asthma ED visit rates across NYC, finding the Bronx rate was 3.8× Staten Island's (212.5 vs. 55.3 per 100k children).", bullet_style))
+    story.append(Paragraph("• Audited a 5-borough correlation (r = 0.78, p = 0.12) as underpowered; scaled to 42 UHF neighborhoods across 4 matched time periods (n = 168), showing a statistically significant link (r = 0.28, p &lt; 0.001).", bullet_style))
+    story.append(Paragraph("• Caught and resolved a double-counting bug in the health dataset where borough and neighborhood rows were summed together; added validation asserting borough totals match citywide figures.", bullet_style))
 
     # 4. EXPERIENCE
     add_section_divider("EXPERIENCE")
@@ -218,7 +219,7 @@ def generate_resume(output_pdf_path):
         ("Languages:", "Python 3, JavaScript (ES6+), TypeScript, Java, SQL, HTML5"),
         ("Frontend:", "React, Ionic, Recharts, Responsive Design"),
         ("Backend & Databases:", "Express.js, REST APIs, Socket.IO, Prisma ORM, PostgreSQL, MySQL"),
-        ("Data Analysis & Visualization:", "Pandas, Seaborn, Plotly, Jupyter Notebook / JupyterLab"),
+        ("Data Analysis & Visualization:", "Pandas, NumPy, SciPy, Matplotlib, Seaborn, Plotly, Jupyter Notebook / JupyterLab"),
         ("Tools & DevOps:", "Git, GitHub, GitHub Actions (CI/CD), Linux, Windows System Administration"),
     ]
     for label, val in skills:
