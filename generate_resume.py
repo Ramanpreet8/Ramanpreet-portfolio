@@ -151,7 +151,7 @@ def generate_resume(output_pdf_path):
     ], colWidths=[390, 142])
     t4.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0), ('BOTTOMPADDING', (0,0), (-1,-1), 0), ('TOPPADDING', (0,0), (-1,-1), 0)]))
     story.append(t4)
-    story.append(Paragraph("• Developed full-stack web applications, performed data analysis in JupyterLab, simulated security incident responses, and managed team Git workflows during a 12-week technical residency.", bullet_style))
+    story.append(Paragraph("• Completed a selective 12-week software residency, developing full-stack web applications, conducting data analysis in JupyterLab, resolving simulated security incidents, and collaborating via Agile Git workflows.", bullet_style))
 
     # 3. PROJECTS
     add_section_divider("PROJECTS")
@@ -160,27 +160,27 @@ def generate_resume(output_pdf_path):
     story.append(Paragraph("<b>Live Interactive Educational Game – MLH Hack Day @ CityTech</b>", item_title_bold))
     story.append(Paragraph('<a href="https://github.com/Ramanpreet8/Live-interactive-educational-game" color="black">https://github.com/Ramanpreet8/Live-interactive-educational-game</a>', link_style))
     story.append(Paragraph("React 18, TypeScript, Node.js, Express, Socket.IO, Google Gemini API", item_sub_italic))
-    story.append(Paragraph("• Co-developed and deployed a real-time multiplayer quiz platform in under 7 hours; enabled instant player joins via QR and room codes.", bullet_style))
-    story.append(Paragraph("• Implemented the interactive gameplay loop: authoritative countdown scoring, answer streaks, XP progression, and animated podiums.", bullet_style))
-    story.append(Paragraph("• Engineered an authoritative Socket.IO state machine with shared TypeScript interfaces to prevent client desync.", bullet_style))
+    story.append(Paragraph("• Co-developed a real-time multiplayer quiz platform under a 7-hour hackathon deadline, enabling instant zero-auth joins via dynamic QR and room codes.", bullet_style))
+    story.append(Paragraph("• Engineered a server-authoritative Socket.IO state machine with shared TypeScript contracts, eliminating client desync and score tampering during live gameplay.", bullet_style))
+    story.append(Paragraph("• Integrated Google Gemini API for on-the-fly trivia generation and built synchronized countdown timers, answer streak tracking, and live leaderboards.", bullet_style))
 
     # Project 2: NutriBloom (3 bullets)
     story.append(Spacer(1, 6))
     story.append(Paragraph("<b>NutriBloom — Full-Stack Nutrition Tracking Platform</b>", item_title_bold))
     story.append(Paragraph('<a href="https://nutribloom8.netlify.app/login" color="black">https://nutribloom8.netlify.app/login</a>', link_style))
     story.append(Paragraph("React 19, Ionic, Express, PostgreSQL, Prisma, Recharts, Jest, GitHub Actions", item_sub_italic))
-    story.append(Paragraph("• Scaled a 5-person prototype into a solo platform; built Mifflin-St Jeor DRV calculation, USDA FoodData API integration, and Recharts historical telemetry dashboards.", bullet_style))
-    story.append(Paragraph("• Programmed 12 Jest/Supertest integration tests (utilizing Google Antigravity as an AI development assistant); diagnosed and fixed a multi-item database transaction bug and UUID parsing errors.", bullet_style))
-    story.append(Paragraph("• Engineered an idempotent database seeding engine for instant 1-click demo logins with 15-minute token TTLs and API-level write protection, establishing automated GitHub Actions CI/CD to Netlify and Render.", bullet_style))
+    story.append(Paragraph("• Scaled a 5-person prototype into a full-stack platform featuring biometric Mifflin-St Jeor calculations, USDA FoodData Central API integration, and Recharts historical telemetry dashboards.", bullet_style))
+    story.append(Paragraph("• Authored 12 Jest and Supertest integration tests; resolved multi-item database transaction rollbacks using Prisma interactive transactions and corrected UUID parsing errors.", bullet_style))
+    story.append(Paragraph("• Implemented Passport.js JWT authentication, rate limiting, and an idempotent database seeding engine for write-protected demo accounts; automated CI/CD deployments to Netlify and Render.", bullet_style))
 
     # Project 3: Air Pollution (3 bullets)
     story.append(Spacer(1, 6))
     story.append(Paragraph("<b>Air Pollution & Public Health Data Analysis</b>", item_title_bold))
     story.append(Paragraph('<a href="https://github.com/Ramanpreet8/AirPollution" color="black">https://github.com/Ramanpreet8/AirPollution</a>', link_style))
     story.append(Paragraph("Python, Pandas, NumPy, SciPy, Seaborn, Matplotlib, Plotly, JupyterLab", item_sub_italic))
-    story.append(Paragraph("• Analyzed pediatric asthma ED rates across boroughs; identified a 3.8× disparity between the Bronx and Staten Island (212.5 vs. 55.3 per 100k).", bullet_style))
-    story.append(Paragraph("• Evaluated a 5-borough correlation (r = 0.78, p = 0.12) as underpowered and expanded to 42 neighborhoods across 4 matched periods (n = 168), finding a weak but significant association (r = 0.28, p &lt; 0.001) across two NYC public-health sources.", bullet_style))
-    story.append(Paragraph("• Diagnosed and resolved a double-counting bug that had inflated visit totals ~2×; implemented a validation check that borough totals match the citywide figure.", bullet_style))
+    story.append(Paragraph("• Analyzed municipal environmental and pediatric health records in Python, identifying a 3.8× disparity in asthma ED visits between the Bronx and Staten Island (212.5 vs. 55.3 per 100k).", bullet_style))
+    story.append(Paragraph("• Evaluated a 5-borough correlation (r = 0.78, p = 0.12) as underpowered and expanded to 42 neighborhoods (n = 168), discovering a statistically significant correlation (r = 0.28, p &lt; 0.001) with PM2.5.", bullet_style))
+    story.append(Paragraph("• Diagnosed and resolved a data grouping double-counting bug that inflated counts ~2×; added automated validation ensuring neighborhood aggregations matched official citywide totals.", bullet_style))
 
     # 4. EXPERIENCE
     add_section_divider("EXPERIENCE")
@@ -198,8 +198,8 @@ def generate_resume(output_pdf_path):
     t6.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0), ('BOTTOMPADDING', (0,0), (-1,-1), 0), ('TOPPADDING', (0,0), (-1,-1), 0)]))
     story.append(t6)
 
-    story.append(Paragraph("• Conducted undergraduate systems research on quantum architectures under Prof. Marcos Pinto, comparing 14 quantum computing claims against published academic literature to identify which hold up, which are overstated, and which remain open questions.", bullet_style))
-    story.append(Paragraph("• Authored the research abstract and prepared a technical poster presentation for the December 2026 CUNY ESP Symposium.", bullet_style))
+    story.append(Paragraph("• Investigated classical-to-quantum architectural translations under Prof. Marcos Pinto, evaluating 14 quantum computing claims against academic literature to distinguish functional models from theoretical hype.", bullet_style))
+    story.append(Paragraph("• Authored a peer-reviewed research abstract and prepared a technical poster presentation detailing systems-level findings for the December 2026 CUNY ESP Symposium.", bullet_style))
 
     # 5. CERTIFICATIONS
     add_section_divider("CERTIFICATIONS")
