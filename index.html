@@ -55,11 +55,10 @@
 <div class="eyebrow">About Me</div><h2>Turning ideas into functional software</h2>
 <div class="grid about">
 <div class="reveal">
-<p>I am a Computer Systems Technology student interested in software engineering, full-stack development, and building practical applications. I have experience working with React, TypeScript, JavaScript, Python, Java, Express, PostgreSQL, Prisma, and Socket.IO.</p>
-<p>Through academic projects, independent development, and team collaboration, I enjoy solving problems and turning ideas into functional software.</p>
-<p>I am a member of the NYC Tech Talent Pipeline Cohort 3, and I take part in the Emerging Scholars Program (ESP) as an undergraduate researcher in quantum computing.</p>
+<p>I am a Computer Systems Technology student at CUNY City Tech focused on software engineering, full-stack development, and backend systems. Through academic coursework, independent projects, and collaborative hackathons, I build reliable applications using React, TypeScript, Node.js, Express, PostgreSQL, Prisma, and Python.</p>
+<p>I am a fellow in the NYC Tech Talent Pipeline (Cohort 3) and an undergraduate researcher evaluating quantum computing architectures in the Emerging Scholars Program (ESP).</p>
 <h3>Why this major</h3>
-<p>My interest in software began with freeCodeCamp videos after high school, watching developers build projects from scratch until I wanted to create my own. That curiosity led me to Computer Systems Technology at City Tech. What drew me to this major is its end-to-end focus: software development, database design, and systems security. Through coursework and the NYC Tech Talent Pipeline bootcamp, I've enjoyed connecting all three disciplines to build practical, reliable applications.</p>
+<p>My interest in software began with freeCodeCamp videos after high school, watching developers build real projects from scratch until I wanted to create my own. That curiosity led me to Computer Systems Technology at City Tech. What drew me to this major is its end-to-end focus: software development, database architecture, and systems security. Through academic coursework and the NYC Tech Talent Pipeline residency, I have enjoyed connecting all three disciplines to build practical, reliable software.</p>
 </div>
 <div class="about-sidebar reveal">
 <div class="card profile-card">
@@ -106,10 +105,10 @@
   <span class="badge">MLH Hack Day</span>
 </div>
 <h3>Live Interactive Educational Game</h3>
-<p>A real-time multiplayer quiz platform shipped in under 7 hours at MLH Hack Day @ CityTech, supporting instant player joins via QR/room codes and dynamic score leaderboards.</p>
+<p>A real-time multiplayer quiz platform built in under 7 hours at MLH Hack Day @ CityTech, featuring server-authoritative Socket.IO room management, instant QR-code player onboarding, and dynamic score leaderboards.</p>
 <div class="project-rationale">
   <strong>Architecture &amp; Thinking:</strong>
-  Engineered an authoritative Socket.IO state machine with shared TypeScript interfaces to prevent client-side desync and score tampering. Integrated Google Gemini API for on-the-fly custom trivia generation tailored to player-selected topics.
+  Engineered a server-authoritative Socket.IO state machine with shared TypeScript data contracts between client and server, preventing state desynchronization and client-side score tampering. Integrated Google Gemini API to generate tailored trivia questions dynamically from player-selected topics.
 </div>
 
 <details class="case-study-details">
@@ -128,11 +127,11 @@
     </div>
     <div class="case-study-section">
       <h4>Hard Bug &amp; Tradeoff</h4>
-      <p><em>Tradeoff:</em> Disallowed clients from running local timers or calculating score increments to prevent race conditions and tampering; centralized all transitions in a server tick state machine (Lobby &rarr; Question &rarr; Reveal &rarr; Leaderboard &rarr; Podium). <em>Hard Bug:</em> Rapid phase shifts caused out-of-order WebSocket packet delivery on mobile browsers. Fixed by attaching monotonic state sequence numbers and broadcasting synchronized server timestamps so client countdowns stayed frame-accurate.</p>
+      <p><em>Tradeoff:</em> Disallowed clients from running local timers or calculating score increments to prevent race conditions and tampering; centralized all transitions in a server-authoritative tick state machine (Lobby &rarr; Question &rarr; Reveal &rarr; Leaderboard &rarr; Podium). <em>Hard Bug:</em> Rapid phase shifts caused out-of-order WebSocket packet delivery on mobile browsers. Fixed by attaching monotonic state sequence numbers and broadcasting synchronized server timestamps so countdowns stayed consistent across client devices.</p>
     </div>
     <div class="case-study-section">
       <h4>Result</h4>
-      <p>Successfully shipped and live-demoed before judges at MLH Hack Day @ CityTech with zero state desync errors, supporting concurrent players joining via QR codes/PINs, dynamic score streaks, and animated podium celebrations.<!-- [TODO: add verified player count if confirmed, e.g. ~30 players tested live at hackathon] --></p>
+      <p>Successfully deployed and live-demoed before judges at MLH Hack Day @ CityTech without state desynchronization, supporting concurrent players joining via dynamic QR codes and PINs, live score streaks, and animated podium rankings.</p>
     </div>
     <div class="case-study-section">
       <h4>What I'd Do Differently</h4>
@@ -141,7 +140,14 @@
   </div>
 </details>
 
-<div class="tags"><span>React 18</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>Socket.IO</span><span>Google Gemini API</span></div>
+<div class="tags">
+  <span>React 18</span>
+  <span>TypeScript</span>
+  <span>Node.js</span>
+  <span>Express</span>
+  <span>Socket.IO</span>
+  <span>Google Gemini API</span>
+</div>
 <a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/Live-interactive-educational-game" target="_blank" rel="noopener">GitHub</a>
 </article>
 
@@ -154,16 +160,16 @@
   <span class="badge">Full-Stack</span>
 </div>
 <h3><a href="https://nutribloom8.netlify.app/login" target="_blank" rel="noopener">NutriBloom — Full-Stack Nutrition Tracking Platform</a></h3>
-<p>Extended a 5-person academic prototype into a solo full-stack platform; engineered biometric Mifflin-St Jeor DRV calculation, USDA FoodData API integration, and Recharts historical telemetry dashboards.</p>
+<p>Extended an academic prototype into a full-stack platform; engineered biometric Mifflin-St Jeor calculations, USDA FoodData Central API integration, and Recharts historical telemetry dashboards.</p>
 
 <div class="team-attribution">
-  <strong>Team Prototype (5 Contributors) vs. Solo Extension:</strong>
-  NutriBloom started as a 5-person academic prototype where I served as backend and database lead, authoring the PostgreSQL schema and Prisma migrations and implementing the "Any Day's Meals" feature. I later extended the platform solo into a production-grade system, adding Mifflin-St Jeor DRV calculations, USDA FoodData API integration, Recharts telemetry dashboards, Passport.js JWT auth, rate limiting, and a 12-test Jest/Supertest suite.
+  <strong>My Role &amp; Independent Extension:</strong>
+  In the initial 5-person academic prototype, I served as backend and database lead, authoring the PostgreSQL schema and Prisma migrations and implementing the full-stack "Any Day's Meals" feature. I then independently developed the application into a complete full-stack platform, engineering biometric Mifflin-St Jeor calculations, USDA FoodData Central API integration, Recharts historical telemetry dashboards, Passport.js JWT authentication, rate limiting, and 12 automated integration tests.
 </div>
 
 <div class="project-rationale">
   <strong>Architecture &amp; Engineering:</strong>
-  Wrote 12 Jest/Supertest integration tests (utilizing Google Antigravity as an AI development assistant); diagnosed and fixed a multi-item transaction bug and UUID parsing errors, hardened API security with Passport.js JWT auth and rate limiting, and built an idempotent database seeding engine with write-protected demo logins.
+  Authored 12 Jest and Supertest integration tests; diagnosed and resolved a multi-item database transaction bug using Prisma interactive transactions, corrected UUID parsing errors, implemented Passport.js JWT authentication and rate limiting, and built an idempotent database seeding engine for write-protected demo logins.
 </div>
 
 <details class="case-study-details">
@@ -186,7 +192,7 @@
     </div>
     <div class="case-study-section">
       <h4>Result</h4>
-      <p>Shipped a production-grade web application deployed live on Netlify and Render with sub-second dashboard rendering, 100% test pass rate across 12 integration tests, and instant 1-click demo logins.</p>
+      <p>Deployed live on Netlify and Render with sub-second dashboard rendering, a 100% pass rate across 12 Jest and Supertest integration tests, and instant 1-click demo logins.</p>
     </div>
     <div class="case-study-section">
       <h4>What I'd Do Differently</h4>
@@ -195,7 +201,16 @@
   </div>
 </details>
 
-<div class="tags"><span>React 19</span><span>Ionic</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>Recharts</span><span>Jest</span><span>CI/CD</span></div>
+<div class="tags">
+  <span>React 19</span>
+  <span>Ionic</span>
+  <span>Express</span>
+  <span>PostgreSQL</span>
+  <span>Prisma</span>
+  <span>Recharts</span>
+  <span>Jest</span>
+  <span>CI/CD</span>
+</div>
 <div class="row" style="margin-top: 1rem; gap: 0.5rem;">
   <a class="btn primary" href="https://nutribloom8.netlify.app/login" target="_blank" rel="noopener">Live Demo ↗</a>
   <a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/NutriBloom.git" target="_blank" rel="noopener">GitHub</a>
@@ -211,10 +226,10 @@
   <span class="badge">Data Analysis</span>
 </div>
 <h3>Air Pollution &amp; Public Health Data Analysis</h3>
-<p>An exploratory data pipeline analyzing environmental disparity across NYC boroughs by integrating municipal open air-quality records and pediatric health outcomes.</p>
+<p>An environmental data analysis pipeline investigating whether fine particulate air pollution (PM2.5) directly correlates with pediatric asthma emergency room visits across New York City neighborhoods.</p>
 <div class="project-rationale">
-  <strong>Analytical Thinking:</strong>
-  Merged 19,827 air-quality and 48 health records, then audited my own pipeline: caught a double-counting bug that doubled visit totals, and ran a time-matched neighborhood-level analysis (n = 168) instead of relying on a 5-borough correlation that wasn't statistically significant.
+  <strong>Analytical Thinking &amp; Validation:</strong>
+  Reconciled 19,827 air-quality and 48 health records in Python, caught and resolved a dataset double-counting error that doubled visit counts, and expanded from an underpowered 5-borough test to a 42-neighborhood sample (n = 168) to obtain statistically defensible findings.
 </div>
 
 <details class="case-study-details">
@@ -247,7 +262,15 @@
   </div>
 </details>
 
-<div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>SciPy</span><span>Seaborn</span><span>Plotly</span><span>JupyterLab</span></div>
+<div class="tags">
+  <span>Python</span>
+  <span>Pandas</span>
+  <span>NumPy</span>
+  <span>SciPy</span>
+  <span>Seaborn</span>
+  <span>Plotly</span>
+  <span>JupyterLab</span>
+</div>
 <a class="btn repo-link" data-repo="" href="https://github.com/Ramanpreet8/AirPollution" target="_blank" rel="noopener">GitHub</a>
 </article>
 
@@ -262,12 +285,17 @@
 <span class="update-date">Dec 2026</span>
 <span class="badge">Research Symposium</span>
 </div>
-<h3>"From Bits to Qubits" Research at CUNY ESP</h3>
-<p>Under the mentorship of Prof. Marcos Pinto in the Emerging Scholars Program (ESP), I investigated how classical computing principles map onto quantum architectures. I evaluated 14 quantum computing claims against published academic literature to identify which hold up, which are overstated, and which remain open questions. The findings are being prepared for presentation at the upcoming December 2026 CUNY ESP Symposium<!-- [TODO: update tense if symposium date has passed] -->.</p>
+<h3>Preparing to Present "From Bits to Qubits" at the CUNY ESP Symposium</h3>
+<p>Under the mentorship of Prof. Marcos Pinto in the Emerging Scholars Program (ESP), I am researching how classical computing principles map onto quantum architectures. I evaluated 14 quantum computing claims against published academic literature to distinguish functional models from theoretical hype, and I am currently preparing the technical abstract and poster to present at the December 2026 CUNY ESP Symposium.</p>
 <div class="reflection-takeaway">
-<strong>Key Reflection:</strong> Analyzing quantum claims against empirical literature highlighted the value of rigorous verification when separating functional computing breakthroughs from theoretical hype.
+<strong>Key Reflection:</strong> Critically evaluating quantum systems claims against peer-reviewed literature reinforces that rigorous verification must always precede implementation when separating genuine computing advances from theoretical speculation.
 </div>
-<div class="tags"><span>Quantum Systems</span><span>Undergraduate Research</span><span>Systems Analysis</span><span>Literature Review</span></div>
+<div class="tags">
+  <span>Quantum Systems</span>
+  <span>Undergraduate Research</span>
+  <span>Systems Analysis</span>
+  <span>Literature Review</span>
+</div>
 </article>
 
 <article class="card update-card reveal">
@@ -280,7 +308,12 @@
 <div class="reflection-takeaway">
 <strong>Key Reflection:</strong> High-pressure sprints demand ruthless prioritization. Designing strict shared TypeScript contracts between client and server upfront eliminated state desync bugs during the live demo.
 </div>
-<div class="tags"><span>Gemini API</span><span>Socket.IO</span><span>TypeScript</span><span>Rapid Prototyping</span></div>
+<div class="tags">
+  <span>Gemini API</span>
+  <span>Socket.IO</span>
+  <span>TypeScript</span>
+  <span>Rapid Prototyping</span>
+</div>
 </article>
 
 <article class="card update-card reveal">
@@ -293,16 +326,58 @@
 <div class="reflection-takeaway">
 <strong>Key Reflection:</strong> Gained deep appreciation for systems-level administration and defensive security alongside product engineering. Clean CI/CD hygiene and modular code make team velocity possible.
 </div>
-<div class="tags"><span>Full-Stack</span><span>Cybersecurity</span><span>Linux Administration</span><span>Team Git</span></div>
+<div class="tags">
+  <span>Full-Stack</span>
+  <span>Cybersecurity</span>
+  <span>Linux Administration</span>
+  <span>Team Git</span>
+</div>
 </article>
 </div></div></section>
 
 <section id="skills"><div class="wrap">
 <div class="eyebrow">Technical Skills</div><h2>Tools of the trade</h2>
 <div class="grid skills">
-<div class="card reveal"><h3>Languages</h3><div class="tags"><span>Python 3</span><span>JavaScript (ES6+)</span><span>TypeScript</span><span>Java</span><span>SQL</span><span>HTML5</span><span>CSS3</span></div></div>
-<div class="card reveal"><h3>Frameworks &amp; Libraries</h3><div class="tags"><span>React</span><span>Ionic</span><span>Node.js</span><span>Express.js</span><span>Socket.IO</span><span>Prisma ORM</span><span>Recharts</span><span>Pandas</span><span>Seaborn</span><span>Plotly</span></div></div>
-<div class="card reveal"><h3>Tools &amp; DevOps</h3><div class="tags"><span>Git</span><span>GitHub</span><span>GitHub Actions (CI/CD)</span><span>PostgreSQL</span><span>MySQL</span><span>Linux</span><span>Windows SysAdmin</span><span>JupyterLab</span></div></div>
+<div class="card reveal">
+  <h3>Languages</h3>
+  <div class="tags">
+    <span>Python 3</span>
+    <span>JavaScript (ES6+)</span>
+    <span>TypeScript</span>
+    <span>Java</span>
+    <span>SQL</span>
+    <span>HTML5</span>
+    <span>CSS3</span>
+  </div>
+</div>
+<div class="card reveal">
+  <h3>Frameworks &amp; Libraries</h3>
+  <div class="tags">
+    <span>React</span>
+    <span>Ionic</span>
+    <span>Node.js</span>
+    <span>Express.js</span>
+    <span>Socket.IO</span>
+    <span>Prisma ORM</span>
+    <span>Recharts</span>
+    <span>Pandas</span>
+    <span>Seaborn</span>
+    <span>Plotly</span>
+  </div>
+</div>
+<div class="card reveal">
+  <h3>Tools &amp; DevOps</h3>
+  <div class="tags">
+    <span>Git</span>
+    <span>GitHub</span>
+    <span>GitHub Actions (CI/CD)</span>
+    <span>PostgreSQL</span>
+    <span>MySQL</span>
+    <span>Linux</span>
+    <span>Windows System Administration</span>
+    <span>JupyterLab</span>
+  </div>
+</div>
 <div class="card reveal cert-card"><h3>Certifications &amp; Training</h3>
 <p class="cert-hint">Click any certificate to view verified PDF credential:</p>
 <div class="tags cert-tags">
