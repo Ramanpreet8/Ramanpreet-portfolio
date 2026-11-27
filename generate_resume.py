@@ -111,7 +111,7 @@ def generate_resume(output_pdf_path):
         'New York, NY | r.preet01@outlook.it | (929) 623-3075 | '
         '<a href="https://www.linkedin.com/in/ramanpreet-singh-524448386" color="black">LinkedIn</a> | '
         '<a href="https://github.com/Ramanpreet8" color="black">GitHub</a> | '
-        '<a href="https://portfolio-ramanpreet.netlify.app" color="black">Portfolio</a>'
+        '<a href="https://ramanpreet8.github.io/Ramanpreet-portfolio/" color="black">Portfolio</a>'
     )
     story.append(Paragraph(contact_line, contact_style))
 
