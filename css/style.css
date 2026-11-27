@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-a:focus-visible, button:focus-visible {
+a:focus-visible, button:focus-visible, summary:focus-visible {
   outline: 3px solid var(--accent2);
   outline-offset: 4px;
 }
@@ -398,6 +398,7 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 26px;
+  min-width: 0;
   transition: transform .25s, border-color .25s;
 }
 
@@ -425,7 +426,7 @@ h2 {
 }
 
 .projects {
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr));
   gap: 24px;
 }
 
@@ -830,7 +831,16 @@ footer {
   }
 
   section {
-    padding: 72px 0;
+    padding: 68px 0;
+  }
+
+  #home {
+    padding: 72px 0 60px;
+  }
+
+  .social {
+    flex-wrap: wrap;
+    gap: 14px 20px;
   }
 }
 
@@ -862,16 +872,19 @@ footer {
 }
 
 .cert-badge {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  width: 100%;
+  max-width: 100%;
   font-size: 13.5px;
   font-weight: 500;
   color: var(--text);
   background: rgba(47, 107, 255, 0.08);
   border: 1px solid rgba(47, 107, 255, 0.28);
-  padding: 8px 14px;
+  padding: 10px 14px;
   border-radius: 10px;
   transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
@@ -885,10 +898,33 @@ footer {
   box-shadow: 0 4px 14px rgba(47, 107, 255, 0.22);
 }
 
-.cert-badge-content {
-  display: inline-flex;
+.tags.cert-tags .cert-badge-content {
+  display: flex;
   align-items: center;
   gap: 8px;
+  min-width: 0;
+  flex: 1 1 180px;
+  line-height: 1.35;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  white-space: normal;
+  color: inherit;
+  font-size: inherit;
+}
+
+.tags.cert-tags .cert-badge-content span {
+  white-space: normal;
+  word-break: break-word;
+  min-width: 0;
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
 }
 
 .cert-icon {
@@ -1088,4 +1124,104 @@ footer {
   .cert-modal-btn::after {
     content: "Open ↗";
   }
+}
+
+/* Technical Evidence Blocks inside Case Studies */
+.tech-evidence {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tech-evidence-header {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent2);
+}
+
+.evidence-block h5 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.evidence-block h5 code {
+  font-size: 12px;
+  color: var(--accent2);
+  background: rgba(47, 107, 255, 0.12);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.diagram-box {
+  background: #0d1117;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  overflow-x: auto;
+}
+
+.diagram-box pre.mermaid {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  display: flex;
+  justify-content: center;
+}
+
+.diagram-box svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.code-block {
+  margin: 0;
+  padding: 12px 14px;
+  background: #0d1117;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #e2e8f0;
+}
+
+.test-output {
+  background: #0d1117;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  border-left: 3px solid #34d399;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 12.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.test-output code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: #34d399;
+  font-size: 12px;
+}
+
+.test-output span {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.test-output pre {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.45;
+  color: #cbd5e1;
+  overflow-x: auto;
 }
