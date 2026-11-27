@@ -161,7 +161,7 @@ def generate_resume(output_pdf_path):
     story.append(Paragraph('<a href="https://github.com/Ramanpreet8/Live-interactive-educational-game" color="black">https://github.com/Ramanpreet8/Live-interactive-educational-game</a>', link_style))
     story.append(Paragraph("React 18, TypeScript, Node.js, Express, Socket.IO, Google Gemini API", item_sub_italic))
     story.append(Paragraph("• Co-developed a real-time multiplayer quiz platform under a 7-hour hackathon deadline, enabling instant zero-auth joins via dynamic QR and room codes.", bullet_style))
-    story.append(Paragraph("• Engineered a server-authoritative Socket.IO state machine with shared TypeScript contracts, eliminating client desync and score tampering during live gameplay.", bullet_style))
+    story.append(Paragraph("• Engineered a server-authoritative Socket.IO state machine with shared TypeScript contracts, mitigating state desynchronization and preventing client-side score tampering.", bullet_style))
     story.append(Paragraph("• Integrated Google Gemini API for on-the-fly trivia generation and built synchronized countdown timers, answer streak tracking, and live leaderboards.", bullet_style))
 
     # Project 2: NutriBloom (3 bullets)
@@ -169,7 +169,7 @@ def generate_resume(output_pdf_path):
     story.append(Paragraph("<b>NutriBloom — Full-Stack Nutrition Tracking Platform</b>", item_title_bold))
     story.append(Paragraph('<a href="https://nutribloom8.netlify.app/login" color="black">https://nutribloom8.netlify.app/login</a>', link_style))
     story.append(Paragraph("React 19, Ionic, Express, PostgreSQL, Prisma, Recharts, Jest, GitHub Actions", item_sub_italic))
-    story.append(Paragraph("• Scaled a 5-person prototype into a full-stack platform featuring biometric Mifflin-St Jeor calculations, USDA FoodData Central API integration, and Recharts historical telemetry dashboards.", bullet_style))
+    story.append(Paragraph("• Led backend/database design on an academic prototype and independently expanded it into a full-stack application with Mifflin-St Jeor calculations, USDA FoodData API integration, and Recharts dashboards.", bullet_style))
     story.append(Paragraph("• Authored 12 Jest and Supertest integration tests; resolved multi-item database transaction rollbacks using Prisma interactive transactions and corrected UUID parsing errors.", bullet_style))
     story.append(Paragraph("• Implemented Passport.js JWT authentication, rate limiting, and an idempotent database seeding engine for write-protected demo accounts; automated CI/CD deployments to Netlify and Render.", bullet_style))
 
@@ -199,7 +199,7 @@ def generate_resume(output_pdf_path):
     story.append(t6)
 
     story.append(Paragraph("• Investigated classical-to-quantum architectural translations under Prof. Marcos Pinto, evaluating 14 quantum computing claims against academic literature to distinguish functional models from theoretical hype.", bullet_style))
-    story.append(Paragraph("• Authored a peer-reviewed research abstract and prepared a technical poster presentation detailing systems-level findings for the December 2026 CUNY ESP Symposium.", bullet_style))
+    story.append(Paragraph("• Authored the research abstract and prepared a technical poster presentation detailing systems-level findings for the December 2026 CUNY ESP Symposium.", bullet_style))
 
     # 5. CERTIFICATIONS
     add_section_divider("CERTIFICATIONS")

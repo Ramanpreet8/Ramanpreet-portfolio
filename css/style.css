@@ -200,6 +200,56 @@ section {
   border-bottom: 1px solid var(--accent);
 }
 
+/* Compact "What I Bring" Section on Homepage */
+.what-i-bring {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.what-i-bring-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent2);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.what-i-bring-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.what-i-bring-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 18px;
+  transition: transform .2s, border-color .2s;
+}
+
+.what-i-bring-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.bring-badge {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.what-i-bring-card p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
 h2 {
   font-size: clamp(28px, 4vw, 40px);
   margin-bottom: 28px;
